@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:background="@color/colorPrimary"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrow" />
+
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+        </include>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvInbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

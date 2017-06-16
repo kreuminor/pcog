@@ -55,7 +55,9 @@
         <activity android:name=".AnnounceActivity" />
         <activity android:name=".time.TimesActivity" />
         <activity android:name=".ContactActivity" />
-        <activity android:name=".Nav.GalleryActivity"></activity>
+        <activity android:name=".Nav.GalleryActivity"/>
+        <activity android:name=".inbox.DetailActivity"/>
+        <activity android:name=".inbox.InboxActivity"/>
     </application>
 
 </manifest>

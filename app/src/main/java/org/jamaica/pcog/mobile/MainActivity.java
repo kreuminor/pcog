@@ -20,6 +20,7 @@ import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import org.jamaica.pcog.mobile.inbox.InboxActivity;
 import org.jamaica.pcog.mobile.mpage.BibleFragment;
 import org.jamaica.pcog.mobile.mpage.EventsFragment;
 import org.jamaica.pcog.mobile.mpage.MoreFragment;
@@ -102,7 +103,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_inbox) {
-            Intent intent = new Intent(MainActivity.this, AnnounceActivity.class);
+            Intent intent = new Intent(MainActivity.this, InboxActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
