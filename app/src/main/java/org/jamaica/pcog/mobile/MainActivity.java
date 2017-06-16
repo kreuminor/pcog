@@ -176,10 +176,10 @@ public class MainActivity extends AppCompatActivity
                 Welcomefragment tab1 = new Welcomefragment();
                 return tab1;
             case 1:
-                BibleFragment tab2 = new BibleFragment();
+                EventsFragment tab2 = new EventsFragment();
                 return tab2;
             case 2:
-                EventsFragment tab3 = new EventsFragment();
+                BibleFragment tab3 = new BibleFragment();
                 return tab3;
             case 3:
                 MoreFragment tab4 = new MoreFragment();
@@ -201,9 +201,9 @@ public class MainActivity extends AppCompatActivity
                 case 0:
                     return "Home";
                 case 1:
-                    return "Bible";
-                case 2:
                     return "Events";
+                case 2:
+                    return "Bible";
                 case 3:
                     return "More";
             }
