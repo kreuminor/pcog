@@ -240,8 +240,8 @@ public class InboxActivity extends ActionBarActivity {
 
 
             holder.inboxTitle.setText(inboxModelList.get(position).getTitle());
-            holder.subject.setText("Subject: " + inboxModelList.get(position).getSubject());
-            holder.date.setText("Date: " + inboxModelList.get(position).getDate());
+            holder.subject.setText(inboxModelList.get(position).getSubject());
+            holder.date.setText(inboxModelList.get(position).getDate());
 
             // rating bar
             //holder.rbMovieRating.setRating(inboxModelList.get(position).getRating()/2);
