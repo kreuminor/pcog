@@ -84,5 +84,6 @@
     <string name="play_again">Play Again</string>
 
     <string name="action_refresh">Refresh</string>
+    <string name="title_activity_maps">Location</string>
 
 </resources>
