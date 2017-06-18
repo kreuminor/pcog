@@ -4,22 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.prep.ardenne.ardenneprep.map.MapsActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="org.jamaica.pcog.mobile.social.Facebook">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorPrimary"
         android:orientation="horizontal">
+
 
         <ImageButton
             android:id="@+id/backbtn"
-            android:layout_width="25sp"
-            android:layout_height="25sp"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
             android:layout_gravity="center"
             android:layout_marginLeft="15sp"
-            android:layout_marginRight="15sp"
             android:background="@color/colorPrimary"
             android:scaleType="fitXY"
             android:src="@drawable/arrow2" />
@@ -30,25 +30,46 @@
             android:layout_height="58dp"
             android:background="@color/colorPrimary"
             android:gravity="left|center"
-            android:paddingLeft="20dp"
-            android:text="Location"
+            android:paddingLeft="15dp"
+            android:text="FaceBook"
             android:textColor="@android:color/background_light"
             android:textSize="18sp"
             android:visibility="visible"
-            tools:text="Location" />
+            tools:text="Facebook" />
 
         <include
             layout="@layout/app_bar_main"
             android:layout_width="1dp"
             android:layout_height="wrap_content"
-            android:visibility="gone"/>
+            android:visibility="gone">
+
+        </include>
+
     </LinearLayout>
 
-    <fragment
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
+    <FrameLayout
+        android:id="@+id/main_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="5dp" />
+        android:layout_height="match_parent">
+
+        <im.delight.android.webview.AdvancedWebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp">
+
+        </im.delight.android.webview.AdvancedWebView>
+
+        <TextView
+            android:id="@id/android:empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text=""
+            android:textSize="12sp" />
+    </FrameLayout>
+
 
 </LinearLayout>

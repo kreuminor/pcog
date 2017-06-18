@@ -2,6 +2,7 @@ package org.jamaica.pcog.mobile;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -61,15 +62,6 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -209,6 +201,29 @@ public class MainActivity extends AppCompatActivity
                     return "More";
             }
             return null;
+        }
+    }
+    boolean doubleBackPressed = false;
+
+    @Override
+    public void onBackPressed() {
+
+        if (doubleBackPressed) {
+
+            super.onBackPressed();
+        } else {
+            doubleBackPressed = true;
+            final DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+            Snackbar.make(drawerLayout, getString(R.string.pressbackagain), Snackbar.LENGTH_SHORT).show();
+            new android.os.Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    doubleBackPressed = false;
+                }
+            }, 2500);
+
+
         }
     }
 }

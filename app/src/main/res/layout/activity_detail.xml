@@ -24,7 +24,7 @@
             android:layout_marginRight="15sp"
             android:background="@color/colorPrimary"
             android:scaleType="fitXY"
-            android:src="@drawable/arrow" />
+            android:src="@drawable/arrow2" />
 
         <include
             layout="@layout/app_bar_main"

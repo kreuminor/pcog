@@ -85,5 +85,6 @@
 
     <string name="action_refresh">Refresh</string>
     <string name="title_activity_maps">Location</string>
+    <string name="pressbackagain">Press back again to exit</string>
 
 </resources>

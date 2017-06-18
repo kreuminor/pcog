@@ -58,6 +58,10 @@
         <activity android:name=".Nav.GalleryActivity" />
         <activity android:name=".inbox.DetailActivity" />
         <activity android:name=".inbox.InboxActivity" />
+        //Social
+        <activity android:name=".social.Facebook" />
+        <activity android:name=".social.Youtube" />
+        <activity android:name=".social.Twitter" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -66,13 +70,14 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
+        <meta-data android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity
-            android:name=".more.MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+        <activity android:name=".more.MapsActivity"
+            android:label="@string/title_activity_maps"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="3e16a361e81cc9b0f6e12573e5de13a7cce8a17e" />
     </application>
 
 </manifest>

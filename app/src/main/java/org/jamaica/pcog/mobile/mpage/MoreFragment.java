@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,9 +22,14 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
+import org.jamaica.pcog.mobile.ContactActivity;
 import org.jamaica.pcog.mobile.more.MapsActivity;
 import org.jamaica.pcog.mobile.R;
 import org.jamaica.pcog.mobile.profile.ProfileModelHome;
+import org.jamaica.pcog.mobile.social.Facebook;
+import org.jamaica.pcog.mobile.social.Twitter;
+import org.jamaica.pcog.mobile.social.TwitterFragment;
+import org.jamaica.pcog.mobile.social.Youtube;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -41,6 +48,8 @@ public class MoreFragment extends Fragment {
     private GridView lvProfilesm;
     private MyAppAdapter myAppAdapter;
     private ArrayList<ProfileModelHome> profileModelArrayList;
+
+    FragmentTransaction fragmentTransaction;
 
     public MoreFragment() {
         // Required empty public constructor
@@ -163,18 +172,23 @@ public class MoreFragment extends Fragment {
 
             else if (i == 1) {
 
-                Toast.makeText(getContext(), "Sample", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), Facebook.class);
+                startActivity(intent);
+                getActivity().finish();
 
             }
             else if (i == 2) {
 
-                Toast.makeText(getContext(), "Sample", Toast.LENGTH_SHORT).show();
-
+                Intent intent = new Intent(getActivity(), Twitter.class);
+                startActivity(intent);
+                getActivity().finish();
             }
 
             else if (i == 3) {
 
-                Toast.makeText(getContext(), "Sample", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), Youtube.class);
+                startActivity(intent);
+                getActivity().finish();
             }
 
             else if (i == 4) {
@@ -183,7 +197,9 @@ public class MoreFragment extends Fragment {
             }
             else if (i == 5) {
 
-                Toast.makeText(getContext(), "Sample", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), ContactActivity.class);
+                startActivity(intent);
+                getActivity().finish();
             }
 
         }
