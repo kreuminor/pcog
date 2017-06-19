@@ -43,7 +43,7 @@ public class ContactActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         profileModelArrayList = new ArrayList<>();
-        profileModelArrayList.add(new ProfileModelHome("(876) 988-1859 ", "Main Office", R.drawable.phoneee));
+        profileModelArrayList.add(new ProfileModelHome("(876) 988-1857 ", "Main Office", R.drawable.phoneee));
         profileModelArrayList.add(new ProfileModelHome("(876) 988-7910 ", "Main Office", R.drawable.phoneee));
         profileModelArrayList.add(new ProfileModelHome("(876) 989-7865 ", "Senior Pastor", R.drawable.phoneee));
         profileModelArrayList.add(new ProfileModelHome("www.google.com ", "Website", R.drawable.webicon));
@@ -214,7 +214,7 @@ public class ContactActivity extends AppCompatActivity {
                 Intent Email = new Intent(Intent.ACTION_SEND);
                 Email.setType("text/email");
                 Email.putExtra(Intent.EXTRA_EMAIL,
-                        new String[]{"portmorechurchofgo@gmail.com"});  //Heart Trust 's email
+                        new String[]{"portmorechurchofgod@gmail.com"});  //Heart Trust 's email
                 Email.putExtra(Intent.EXTRA_SUBJECT,
                         "Add your Subject"); // Email 's Subject
                 Email.putExtra(Intent.EXTRA_TEXT, "Dear PCOG," + "");  //Email 's Greeting text

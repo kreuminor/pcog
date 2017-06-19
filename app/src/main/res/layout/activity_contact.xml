@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg_splash"
     android:orientation="vertical"
-    tools:context="com.svnit.harsimar.testing.org.svnit.harsimar.testing.ContactActivity">
+    tools:context="org.jamaica.pcog.mobile.ContactActivity">
 
     <include
         layout="@layout/app_bar_main"
