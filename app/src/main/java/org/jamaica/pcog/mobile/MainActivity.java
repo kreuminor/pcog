@@ -22,6 +22,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import org.jamaica.pcog.mobile.inbox.InboxActivity;
+import org.jamaica.pcog.mobile.more.MapsActivity;
 import org.jamaica.pcog.mobile.mpage.BibleFragment;
 import org.jamaica.pcog.mobile.mpage.EventsFragment;
 import org.jamaica.pcog.mobile.mpage.MoreFragment;
@@ -103,7 +104,10 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_location) {
-
+            Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+            finish();
         } else if (id == R.id.nav_call) {
             Intent intent = new Intent(MainActivity.this, ContactActivity.class);
             startActivity(intent);

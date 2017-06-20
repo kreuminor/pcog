@@ -29,7 +29,7 @@ public class TimesActivity extends AppCompatActivity {
         setContentView(org.jamaica.pcog.mobile.R.layout.activity_times);
 
         Toolbar toolbar = (Toolbar) findViewById(org.jamaica.pcog.mobile.R.id.toolbar);
-        toolbar.setTitle("Church Schedule");
+        toolbar.setTitle("Order of Service");
         setSupportActionBar(toolbar);
 
         ViewPager viewPager = (ViewPager) findViewById(org.jamaica.pcog.mobile.R.id.viewpager);
