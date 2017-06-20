@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -27,6 +28,8 @@ public class LeadershipActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_leadership);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         // add back arrow to toolbar
         img = (ImageButton) findViewById(R.id.backbtn);
@@ -40,7 +43,7 @@ public class LeadershipActivity extends AppCompatActivity {
                 finish();
             }
         });
-        getSupportActionBar().setTitle("Leadership");
+        getSupportActionBar().setTitle("Our Leadership");
 
         WebView htmlWebView = (WebView) findViewById(R.id.web);
         WebSettings webSetting = htmlWebView.getSettings();
