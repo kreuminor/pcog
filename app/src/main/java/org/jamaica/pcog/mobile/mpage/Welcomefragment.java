@@ -19,6 +19,7 @@ import com.bumptech.glide.Glide;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
+import org.jamaica.pcog.mobile.LeadershipActivity;
 import org.jamaica.pcog.mobile.R;
 import org.jamaica.pcog.mobile.inbox.InboxActivity;
 import org.jamaica.pcog.mobile.profile.ProfileModelHome;
@@ -37,7 +38,7 @@ public class Welcomefragment extends Fragment {
 
     CarouselView carouselView;
 
-    int[] sampleImages = {R.drawable.front, R.drawable.image_1, R.drawable.image_3, R.drawable.image_4, R.drawable.image_5};
+    int[] sampleImages = {R.drawable.front_2, R.drawable.front, R.drawable.image_3, R.drawable.image_4, R.drawable.image_5};
 
 
     public Welcomefragment() {
@@ -53,13 +54,13 @@ public class Welcomefragment extends Fragment {
 
         carouselView = (CarouselView) v.findViewById(R.id.carouselView);
         carouselView.setPageCount(sampleImages.length);
-
         carouselView.setImageListener(imageListener);
 
 
         profileModelArrayList = new ArrayList<>();
         profileModelArrayList.add(new ProfileModelHome("Announcements", "?", R.drawable.logo1));
         profileModelArrayList.add(new ProfileModelHome("Order of Service", "", R.drawable.logo1));
+        profileModelArrayList.add(new ProfileModelHome("Leadership", "", R.drawable.logo1));
         profileModelArrayList.add(new ProfileModelHome("Media", "", R.drawable.logo1));
 
         lvProfilesm = (ListView) v.findViewById(R.id.lvProfilesm);
@@ -160,6 +161,13 @@ public class Welcomefragment extends Fragment {
                 getActivity().finish();
 
             } else if (i == 2) {
+
+                Intent intent = new Intent(getActivity(), LeadershipActivity.class);
+                startActivity(intent);
+                getActivity().finish();
+
+            }
+            else if (i == 3) {
 
                 Toast.makeText(getActivity(), "Media will be here!!", Toast.LENGTH_SHORT).show();
 

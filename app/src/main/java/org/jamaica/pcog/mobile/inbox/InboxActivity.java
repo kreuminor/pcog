@@ -71,7 +71,7 @@ public class InboxActivity extends ActionBarActivity {
                 finish();
             }
         });
-        getSupportActionBar().setTitle("Inbox");
+        getSupportActionBar().setTitle("Announcements");
 
         dialog = new ProgressDialog(this);
         dialog.setIndeterminate(true);

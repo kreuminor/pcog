@@ -70,7 +70,7 @@ public class AnnounceActivity extends AppCompatActivity {
 
         });
 
-        getSupportActionBar().setTitle("Inbox");
+        getSupportActionBar().setTitle("Announcements");
 
         swipeLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_layout);
 

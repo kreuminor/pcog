@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -35,6 +36,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
 
+    ImageButton img;
     private ListView lvProfilesm;
     private MyAppAdapter myAppAdapter;
     private ArrayList<ProfileModelHome> profileModelArrayList;
@@ -47,6 +49,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        // add back arrow to toolbar
+        img = (ImageButton) findViewById(R.id.backbtn);
+
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+                finish();
+            }
+        });
 
 
         profileModelArrayList = new ArrayList<>();
@@ -75,12 +90,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng pcog = new LatLng(17.961494, -76.874531);
+        LatLng pcog = new LatLng(17.956939, -76.874540);
         mMap.addMarker(new MarkerOptions().position(pcog).title("Church of God in Jamaica, Portmore").snippet("58A Barbara Ave., Edgewater, Portmore"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(pcog));
         //mMap.animateCamera(CameraUpdateFactory.zoomTo(16.0f));
 
-        CameraPosition me = CameraPosition.builder().target(new LatLng(17.961494, -76.874531)).zoom(16).build();
+        CameraPosition me = CameraPosition.builder().target(new LatLng(17.956939, -76.874540)).zoom(17).build();
         googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(me));
 
         googleMap.getUiSettings().setScrollGesturesEnabled(true);
