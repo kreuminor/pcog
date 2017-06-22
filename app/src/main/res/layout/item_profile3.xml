@@ -38,8 +38,7 @@
                 android:layout_height="wrap_content"
                 android:hapticFeedbackEnabled="true"
                 android:text="Username"
-                android:textColor="@color/colorPrimary"
-                android:textSize="14sp" />
+                android:textAppearance="@android:style/TextAppearance.Theme" />
 
 
             <TextView

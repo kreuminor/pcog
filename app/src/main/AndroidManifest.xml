@@ -52,12 +52,11 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".AnnounceActivity" />
         <activity android:name=".time.TimesActivity" />
         <activity android:name=".ContactActivity" />
         <activity android:name=".Nav.GalleryActivity" />
-        <activity android:name=".inbox.DetailActivity" />
-        <activity android:name=".inbox.InboxActivity" />
+        <activity android:name=".announcement.DetailActivity" />
+        <activity android:name=".announcement.InboxActivity" />
         //Social
         <activity android:name=".social.Facebook" />
         <activity android:name=".social.Youtube" />

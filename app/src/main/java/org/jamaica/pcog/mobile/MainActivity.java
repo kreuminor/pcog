@@ -20,8 +20,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import org.jamaica.pcog.mobile.inbox.InboxActivity;
+import org.jamaica.pcog.mobile.announcement.InboxActivity;
 import org.jamaica.pcog.mobile.more.MapsActivity;
 import org.jamaica.pcog.mobile.mpage.BibleFragment;
 import org.jamaica.pcog.mobile.mpage.EventsFragment;
@@ -101,8 +102,6 @@ public class MainActivity extends AppCompatActivity
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
 
-        } else if (id == R.id.nav_gallery) {
-
         } else if (id == R.id.nav_location) {
             Intent intent = new Intent(MainActivity.this, MapsActivity.class);
             startActivity(intent);
@@ -114,9 +113,15 @@ public class MainActivity extends AppCompatActivity
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
         } else if (id == R.id.nav_share) {
-
+            Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
 
         }  else if (id == R.id.nav_lead) {
+            Intent intent = new Intent(MainActivity.this, LeadershipActivity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+            finish();
+
+        }  else if (id == R.id.nav_podcast) {
             Intent intent = new Intent(MainActivity.this, LeadershipActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);

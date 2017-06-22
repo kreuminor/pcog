@@ -21,7 +21,7 @@ import com.synnapps.carouselview.ImageListener;
 
 import org.jamaica.pcog.mobile.LeadershipActivity;
 import org.jamaica.pcog.mobile.R;
-import org.jamaica.pcog.mobile.inbox.InboxActivity;
+import org.jamaica.pcog.mobile.announcement.InboxActivity;
 import org.jamaica.pcog.mobile.profile.ProfileModelHome;
 import org.jamaica.pcog.mobile.time.TimesActivity;
 
@@ -61,7 +61,7 @@ public class Welcomefragment extends Fragment {
         profileModelArrayList.add(new ProfileModelHome("Announcements", "?", R.drawable.logo1));
         profileModelArrayList.add(new ProfileModelHome("Order of Service", "", R.drawable.logo1));
         profileModelArrayList.add(new ProfileModelHome("Leadership", "", R.drawable.logo1));
-        profileModelArrayList.add(new ProfileModelHome("Media", "", R.drawable.logo1));
+        profileModelArrayList.add(new ProfileModelHome("Podcast", "", R.drawable.logo1));
 
         lvProfilesm = (ListView) v.findViewById(R.id.lvProfilesm);
         myAppAdapter = new MyAppAdapter(profileModelArrayList, getContext());

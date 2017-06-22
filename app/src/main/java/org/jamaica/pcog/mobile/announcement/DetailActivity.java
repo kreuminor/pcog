@@ -1,4 +1,4 @@
-package org.jamaica.pcog.mobile.inbox;
+package org.jamaica.pcog.mobile.announcement;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.google.gson.Gson;
 
 import org.jamaica.pcog.mobile.R;
-import org.jamaica.pcog.mobile.inbox.model.InboxModel;
+import org.jamaica.pcog.mobile.announcement.model.InboxModel;
 
 
 public class DetailActivity extends ActionBarActivity {

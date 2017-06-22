@@ -1,4 +1,4 @@
-package org.jamaica.pcog.mobile.inbox;
+package org.jamaica.pcog.mobile.announcement;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -26,7 +26,7 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 import org.jamaica.pcog.mobile.MainActivity;
 import org.jamaica.pcog.mobile.R;
-import org.jamaica.pcog.mobile.inbox.model.InboxModel;
+import org.jamaica.pcog.mobile.announcement.model.InboxModel;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

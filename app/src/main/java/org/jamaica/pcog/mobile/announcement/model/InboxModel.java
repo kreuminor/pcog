@@ -1,4 +1,4 @@
-package org.jamaica.pcog.mobile.inbox.model;
+package org.jamaica.pcog.mobile.announcement.model;
 
 /**
  * Created by hisham on 9/6/2015.

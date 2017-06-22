@@ -7,12 +7,12 @@
             android:icon="@drawable/inbox"
             android:title="Announcements" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/gal"
-            android:title="Gallery" />
+            android:id="@+id/nav_podcast"
+            android:icon="@drawable/media"
+            android:title="Podcast" />
         <item
             android:id="@+id/nav_lead"
-            android:icon="@drawable/map1"
+            android:icon="@drawable/leader"
             android:title="Leadership" />
         <item
             android:id="@+id/nav_location"
@@ -20,7 +20,7 @@
             android:title="Location" />
         <item
             android:id="@+id/nav_call"
-            android:icon="@drawable/user"
+            android:icon="@drawable/conn"
             android:title="Contact Us" />
         <item
             android:id="@+id/nav_share"

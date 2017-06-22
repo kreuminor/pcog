@@ -87,4 +87,8 @@
     <string name="title_activity_maps">Location</string>
     <string name="pressbackagain">Press back again to exit</string>
 
+
+    <string name="PlayNow">Play Now</string>
+    <string name="Link">https://www.npr.org/rss/podcast.php?id=510298</string>
+
 </resources>
