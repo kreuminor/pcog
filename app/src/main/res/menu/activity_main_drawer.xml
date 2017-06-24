@@ -7,6 +7,10 @@
             android:icon="@drawable/inbox"
             android:title="Announcements" />
         <item
+            android:id="@+id/nav_bible"
+            android:icon="@drawable/bib"
+            android:title="Bible" />
+        <item
             android:id="@+id/nav_podcast"
             android:icon="@drawable/media"
             android:title="Podcast" />
@@ -16,15 +20,17 @@
             android:title="Leadership" />
         <item
             android:id="@+id/nav_location"
-            android:icon="@drawable/map1"
+            android:icon="@drawable/map"
             android:title="Location" />
         <item
             android:id="@+id/nav_call"
-            android:icon="@drawable/conn"
+            android:icon="@drawable/contac"
             android:title="Contact Us" />
+
         <item
-            android:id="@+id/nav_share"
-            android:icon="@drawable/ic_menu_share"
-            android:title="Share" />
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="About Us" />
+
     </group>
 </menu>

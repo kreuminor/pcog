@@ -54,7 +54,7 @@
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
+            android:layout_margin="8sp"
             android:layout_weight="1" />
 
         <android.support.design.widget.CoordinatorLayout
@@ -66,8 +66,8 @@
                 android:id="@+id/lblist"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:divider="@null"
-                android:layout_margin="5dip" />
+                android:layout_margin="8sp"
+                android:divider="@null" />
 
         </android.support.design.widget.CoordinatorLayout>
 

@@ -23,6 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import org.jamaica.pcog.mobile.announcement.InboxActivity;
+import org.jamaica.pcog.mobile.bible.activities.Bible;
 import org.jamaica.pcog.mobile.more.MapsActivity;
 import org.jamaica.pcog.mobile.mpage.BibleFragment;
 import org.jamaica.pcog.mobile.mpage.EventsFragment;
@@ -112,10 +113,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
-        } else if (id == R.id.nav_share) {
-            Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
-
-        }  else if (id == R.id.nav_lead) {
+        } else if (id == R.id.nav_lead) {
             Intent intent = new Intent(MainActivity.this, LeadershipActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
@@ -126,7 +124,15 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
+
+        } else if (id == R.id.nav_bible) {
+            Intent intent = new Intent(MainActivity.this, Bible.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+            finish();
+
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -187,11 +193,8 @@ public class MainActivity extends AppCompatActivity
                 EventsFragment tab2 = new EventsFragment();
                 return tab2;
             case 2:
-                BibleFragment tab3 = new BibleFragment();
+                MoreFragment tab3 = new MoreFragment();
                 return tab3;
-            case 3:
-                MoreFragment tab4 = new MoreFragment();
-                return tab4;
         }
 
             return PlaceholderFragment.newInstance(position + 1);
@@ -200,7 +203,7 @@ public class MainActivity extends AppCompatActivity
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 4;
+            return 3;
         }
 
         @Override
@@ -211,8 +214,6 @@ public class MainActivity extends AppCompatActivity
                 case 1:
                     return "Events";
                 case 2:
-                    return "Bible";
-                case 3:
                     return "More";
             }
             return null;

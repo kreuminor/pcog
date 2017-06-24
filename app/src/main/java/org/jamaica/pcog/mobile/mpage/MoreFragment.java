@@ -63,12 +63,12 @@ public class MoreFragment extends Fragment {
         View v = inflater.inflate(org.jamaica.pcog.mobile.R.layout.fragment_more, container, false);
 
         profileModelArrayList = new ArrayList<>();
-        profileModelArrayList.add(new ProfileModelHome("LOCATION", "", R.drawable.logo));
         profileModelArrayList.add(new ProfileModelHome("FACEBOOK", "", R.drawable.logo));
         profileModelArrayList.add(new ProfileModelHome("TWITTER", "", R.drawable.logo));
         profileModelArrayList.add(new ProfileModelHome("YOUTUBE", "", R.drawable.logo));
+        profileModelArrayList.add(new ProfileModelHome("INSTAGRAM", "", R.drawable.logo));
+        profileModelArrayList.add(new ProfileModelHome("RESOURCES", "", R.drawable.logo));
         profileModelArrayList.add(new ProfileModelHome("WEBSITE", "", R.drawable.logo));
-        profileModelArrayList.add(new ProfileModelHome("CONTACT US", "", R.drawable.logo));
 
         lvProfilesm = (GridView) v.findViewById(R.id.grid);
         myAppAdapter = new MyAppAdapter(profileModelArrayList, getActivity());
@@ -164,44 +164,37 @@ public class MoreFragment extends Fragment {
 
             if (i == 0) {
 
-                Intent intent = new Intent(getActivity(), MapsActivity.class);
-                startActivity(intent);
-                getActivity().finish();
-
-            }
-
-            else if (i == 1) {
-
                 Intent intent = new Intent(getActivity(), Facebook.class);
                 startActivity(intent);
                 getActivity().finish();
 
             }
-            else if (i == 2) {
+            else if (i == 1) {
 
                 Intent intent = new Intent(getActivity(), Twitter.class);
                 startActivity(intent);
                 getActivity().finish();
             }
 
-            else if (i == 3) {
+            else if (i == 2) {
 
                 Intent intent = new Intent(getActivity(), Youtube.class);
                 startActivity(intent);
                 getActivity().finish();
             }
 
+            else if (i == 3) {
+
+                Toast.makeText(getContext(), "Instagram", Toast.LENGTH_SHORT).show();
+            }
             else if (i == 4) {
 
-                Toast.makeText(getContext(), "Sample", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Resources", Toast.LENGTH_SHORT).show();
             }
             else if (i == 5) {
 
-                Intent intent = new Intent(getActivity(), ContactActivity.class);
-                startActivity(intent);
-                getActivity().finish();
+                Toast.makeText(getContext(), "Website", Toast.LENGTH_SHORT).show();
             }
-
         }
     }
     public static String StreamToString(InputStream in) throws IOException {

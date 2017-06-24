@@ -91,4 +91,15 @@
     <string name="PlayNow">Play Now</string>
     <string name="Link">https://www.npr.org/rss/podcast.php?id=510298</string>
 
+    <string name="language_code">Language Code</string>
+    <string name="loading">Loading...</string>
+    <string-array name="endpoints_list">
+        <item>Volume</item>
+        <item>VolumeLanguage</item>
+        <item>Book</item>
+        <item>Audio</item>
+        <item>Video</item>
+        <item>Text</item>
+    </string-array>
+
 </resources>
