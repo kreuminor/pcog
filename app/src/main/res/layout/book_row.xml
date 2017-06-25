@@ -41,6 +41,7 @@
       android:paddingBottom="5sp"
       android:paddingRight="5sp"
       android:paddingTop="5sp"
-      android:src="@drawable/listing3" />
+      android:src="@drawable/listing3"
+      android:visibility="gone" />
 
 </RelativeLayout>

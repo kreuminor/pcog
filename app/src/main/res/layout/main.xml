@@ -36,11 +36,14 @@
 
           <ImageButton
               android:id="@+id/bsearch"
-              android:layout_width="45sp"
-              android:layout_height="55sp"
-              android:layout_weight="0.03"
-              android:scaleType="centerInside"
-              app:srcCompat="@drawable/search" />
+              android:layout_width="25dip"
+              android:layout_height="25dip"
+              android:layout_gravity="center"
+              android:layout_marginLeft="15sp"
+              android:layout_marginRight="15sp"
+              android:background="@color/colorPrimary"
+              android:scaleType="fitXY"
+              android:src="@drawable/search" />
 
           <include
               layout="@layout/app_bar_main"
