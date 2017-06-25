@@ -93,10 +93,13 @@
 
         <activity android:name=".podcast.StreamingMp3Player" />
         <activity android:name=".podcast.MainActivity" />
+
         <activity android:name=".podcast.PodcastActivity"/>
         <activity android:name=".podcast.Sermon1"/>
         <activity android:name=".podcast.Sermon2"/>
         <activity android:name=".podcast.Sermon3"/>
+        <activity android:name=".resources.Resources"/>
+
     </application>
 
 </manifest>
