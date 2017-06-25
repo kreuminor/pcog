@@ -29,6 +29,8 @@ import org.jamaica.pcog.mobile.mpage.BibleFragment;
 import org.jamaica.pcog.mobile.mpage.EventsFragment;
 import org.jamaica.pcog.mobile.mpage.MoreFragment;
 import org.jamaica.pcog.mobile.mpage.Welcomefragment;
+import org.jamaica.pcog.mobile.podcast.PodcastActivity;
+import org.jamaica.pcog.mobile.podcast.StreamingMp3Player;
 import org.jamaica.pcog.mobile.time.TimesActivity;
 
 public class MainActivity extends AppCompatActivity
@@ -120,7 +122,7 @@ public class MainActivity extends AppCompatActivity
             finish();
 
         }  else if (id == R.id.nav_podcast) {
-            Intent intent = new Intent(MainActivity.this, LeadershipActivity.class);
+            Intent intent = new Intent(MainActivity.this, PodcastActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
