@@ -115,7 +115,7 @@ public class Resources extends AppCompatActivity {
 
             if (rowView == null) {
                 LayoutInflater inflater = getLayoutInflater();
-                rowView = inflater.inflate(R.layout.list_single, parent, false);
+                rowView = inflater.inflate(R.layout.list_single1, parent, false);
 
                 viewHolder = new MyAppAdapter.ViewHolder();
                 viewHolder.profilePic = (ImageView) rowView.findViewById(R.id.imgProfile);
