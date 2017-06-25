@@ -138,19 +138,22 @@ public class PodcastActivity extends AppCompatActivity {
 
             if (i == 0) {
 
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Sermon1.class);
                 startActivity(intent);
                 finish();
 
             } else if (i == 1) {
 
-                Intent intent = new Intent(getApplicationContext(), StreamingMp3Player.class);
+                Intent intent = new Intent(getApplicationContext(), Sermon2.class);
                 startActivity(intent);
                 finish();
 
             } else if (i == 2) {
 
-                Toast.makeText(getApplicationContext(), "Media will be here!!", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(getApplicationContext(), Sermon3.class);
+                startActivity(intent);
+                finish();
 
             }
             else if (i == 3) {
