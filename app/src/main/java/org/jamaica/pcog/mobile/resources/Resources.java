@@ -42,7 +42,7 @@ public class Resources extends AppCompatActivity {
         profileModelArrayList.add(new ProfileModelHome("http://www.google.com ", "", R.drawable.phoneee));
         profileModelArrayList.add(new ProfileModelHome("https://nodejs.org/en/", "", R.drawable.phoneee));
         profileModelArrayList.add(new ProfileModelHome("https://www.teamviewer.com/en/", "", R.drawable.webicon));
-        profileModelArrayList.add(new ProfileModelHome("Email Us ", "portmorechurchogod@gmail.com", R.drawable.emaile));
+        profileModelArrayList.add(new ProfileModelHome("http:www.bing.com", "", R.drawable.emaile));
 
         lvResources = (ListView) findViewById(R.id.lblist);
         myAppAdapter = new MyAppAdapter(profileModelArrayList, getApplicationContext());
