@@ -24,6 +24,7 @@ import org.jamaica.pcog.mobile.R;
 import org.jamaica.pcog.mobile.announcement.InboxActivity;
 import org.jamaica.pcog.mobile.podcast.PodcastActivity;
 import org.jamaica.pcog.mobile.profile.ProfileModelHome;
+import org.jamaica.pcog.mobile.resources.Resources;
 import org.jamaica.pcog.mobile.time.TimesActivity;
 
 import java.util.ArrayList;
@@ -61,7 +62,7 @@ public class Welcomefragment extends Fragment {
         profileModelArrayList = new ArrayList<>();
         profileModelArrayList.add(new ProfileModelHome("Announcements", "?", R.drawable.logo1));
         profileModelArrayList.add(new ProfileModelHome("Order of Service", "", R.drawable.logo1));
-        profileModelArrayList.add(new ProfileModelHome("Leadership", "", R.drawable.logo1));
+        profileModelArrayList.add(new ProfileModelHome("Resources", "", R.drawable.logo1));
         profileModelArrayList.add(new ProfileModelHome("Podcast", "", R.drawable.logo1));
 
         lvProfilesm = (ListView) v.findViewById(R.id.lvProfilesm);
@@ -163,7 +164,7 @@ public class Welcomefragment extends Fragment {
 
             } else if (i == 2) {
 
-                Intent intent = new Intent(getActivity(), LeadershipActivity.class);
+                Intent intent = new Intent(getActivity(), Resources.class);
                 startActivity(intent);
                 getActivity().finish();
 
