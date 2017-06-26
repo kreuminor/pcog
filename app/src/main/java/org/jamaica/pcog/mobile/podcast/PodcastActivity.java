@@ -39,10 +39,10 @@ public class PodcastActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         profileModelArrayList = new ArrayList<>();
-        profileModelArrayList.add(new ProfileModelHome("Sermon on the Mount", "?", R.drawable.mic));
-        profileModelArrayList.add(new ProfileModelHome("3 Loaves, two fishes", "", R.drawable.mic));
-        profileModelArrayList.add(new ProfileModelHome("How to be an Effective Leader", "", R.drawable.mic));
-        profileModelArrayList.add(new ProfileModelHome("Anniverssayr Banquet", "", R.drawable.mic));
+        profileModelArrayList.add(new ProfileModelHome("Sermon on the Mount", "11th June 2017", R.drawable.mic));
+        profileModelArrayList.add(new ProfileModelHome("3 Loaves, two fishes", "7th May, 2017", R.drawable.mic));
+        profileModelArrayList.add(new ProfileModelHome("How to be an Effective Leader", "11th June, 017", R.drawable.mic));
+        profileModelArrayList.add(new ProfileModelHome("Anniversary Banquet", "12th December, 2017", R.drawable.mic));
 
         lvProfilesm = (ListView) findViewById(R.id.lvProfilesm);
         myAppAdapter = new MyAppAdapter(profileModelArrayList, getApplicationContext());

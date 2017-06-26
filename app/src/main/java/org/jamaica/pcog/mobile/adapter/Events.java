@@ -42,5 +42,12 @@ public class Events {
         this.day = day;
     }
 
-    private String name,email,day, month, description;
+    public String getDate() {
+        return date;
+    }
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    private String name,email,day, month, description, date;
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.jamaica.pcog.mobile">
+    package="org.jamaica.pcog.mobile"
+    android:screenOrientation="portrait">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -24,7 +25,8 @@
         <activity
             android:name=".WelcomeActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,22 +47,29 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".time.TimesActivity" />
-        <activity android:name=".ContactActivity" />
-        <activity android:name=".Nav.GalleryActivity" />
-        <activity android:name=".announcement.DetailActivity" />
-        <activity android:name=".announcement.InboxActivity" />
+        <activity android:name=".time.TimesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ContactActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".announcement.DetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".announcement.InboxActivity"
+            android:screenOrientation="portrait"/>
         //Social
-        <activity android:name=".social.Facebook" />
-        <activity android:name=".social.Youtube" />
-        <activity android:name=".social.Twitter" />
+        <activity android:name=".social.Facebook"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".social.Youtube"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".social.Twitter"
+            android:screenOrientation="portrait"/>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -81,24 +90,36 @@
             android:name="io.fabric.ApiKey"
             android:value="3e16a361e81cc9b0f6e12573e5de13a7cce8a17e" />
 
-        <activity android:name=".LeadershipActivity" />
-        <activity android:name=".bible.activities.SearchActivity" />
-        <activity android:name=".bible.activities.SearchResultsActivity" />
-        <activity android:name=".bible.activities.ChapterActivity" />
-        <activity android:name=".bible.activities.Bible" />
+        <activity android:name=".LeadershipActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".bible.activities.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".bible.activities.SearchResultsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".bible.activities.ChapterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".bible.activities.Bible"
+            android:screenOrientation="portrait"/>
 
         <provider
             android:name=".bible.providers.BibleProvider"
             android:authorities="com.josephblough.bible.bibleprovider" />
 
-        <activity android:name=".podcast.StreamingMp3Player" />
-        <activity android:name=".podcast.MainActivity" />
+        <activity android:name=".podcast.StreamingMp3Player"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".podcast.MainActivity"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".podcast.PodcastActivity"/>
-        <activity android:name=".podcast.Sermon1"/>
-        <activity android:name=".podcast.Sermon2"/>
-        <activity android:name=".podcast.Sermon3"/>
-        <activity android:name=".resources.Resources"/>
+        <activity android:name=".podcast.PodcastActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".podcast.Sermon1"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".podcast.Sermon2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".podcast.Sermon3"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".resources.Resources"
+            android:screenOrientation="portrait"/>
 
     </application>
 
