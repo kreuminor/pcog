@@ -39,7 +39,7 @@ public class Resources extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         profileModelArrayList = new ArrayList<>();
-        profileModelArrayList.add(new ProfileModelHome("Church og God (International)", "http://www.jesusisthesubject.org/", R.drawable.phoneee));
+        profileModelArrayList.add(new ProfileModelHome("Church of God (International)", "http://www.jesusisthesubject.org/", R.drawable.phoneee));
         profileModelArrayList.add(new ProfileModelHome("Centennial Annual General Assembly Highlights", "http://scog-assembly100.weebly.com/", R.drawable.phoneee));
         profileModelArrayList.add(new ProfileModelHome("COG Constitution and By-Laws", "http://churchofgodinjamaica.org/app/constitutionCoG.pdf", R.drawable.webicon));
         profileModelArrayList.add(new ProfileModelHome("Ardenne High School", "http://www.ardennehigh.com", R.drawable.emaile));
