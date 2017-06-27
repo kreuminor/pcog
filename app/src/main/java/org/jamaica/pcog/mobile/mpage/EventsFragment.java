@@ -38,7 +38,7 @@ public class EventsFragment extends Fragment {
     MyAdapter adp;
     ListView lv;
     Button btn;
-    //Myfragment myfragment;
+    Myfragment myfragment;
 
     public EventsFragment() {
         // Required empty public constructor
@@ -66,21 +66,16 @@ public class EventsFragment extends Fragment {
                 //GET DATA BASED ON POSITION
                 Events obj= al.get(position);
 
-
-                Toast.makeText(getContext(), "Get more info", Toast.LENGTH_SHORT).show();
-
-
                 //FIND IF FRAGMENT IS AVAIABLE OR NOT
-                //myfragment=(Myfragment)getSupportFragmentManager().findFragmentById(R.id.fragment1);
+                myfragment=(Myfragment)getFragmentManager().findFragmentById(R.id.fragment1);
                 //IF AVAILABLE PASS DATA TO FRAGMENT
 
-               // if(myfragment !=null){
+                if(myfragment !=null){
 
-               //     myfragment.myMethod(obj);
-                //}
+                    myfragment.myMethod(obj);
+                }
             }
         });
-
         return v;
     }
     private class Myservice extends AsyncTask<Void,Void,String >{
@@ -120,19 +115,23 @@ public class EventsFragment extends Fragment {
         protected void onPostExecute(String s) {
             try{
                 JSONObject obj= new JSONObject(s);
-                JSONArray contacts=obj.getJSONArray("events");
-                for(int i=1;i<contacts.length();i++){
-                    JSONObject contact=contacts.getJSONObject(i);
-                    String name=contact.getString("name");
-                    String month=contact.getString("month");
-                    String day =contact.getString("day");
-                    //JSONObject ob =contact.getJSONObject("month");
-                    //String mobile=ob.getString("mobile");
+                JSONArray events=obj.getJSONArray("events");
+                for(int i=1;i<events.length();i++){
+                    JSONObject event=events.getJSONObject(i);
+                    String name=event.getString("name");
+                    String month=event.getString("month");
+                    String day =event.getString("day");
+                    String date =event.getString("date");
+                    String description=event.getString("description");
+                    String email=event.getString("email");
 
                     Events obj1=new Events();
                     obj1.setName(name);
                     obj1.setMonth(month);
                     obj1.setDay(day);
+                    obj1.setDate(date);
+                    obj1.setDescription(description);
+                    obj1.setEmail(email);
 
                     al.add(obj1);
                 }

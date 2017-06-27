@@ -39,10 +39,11 @@ public class Resources extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         profileModelArrayList = new ArrayList<>();
-        profileModelArrayList.add(new ProfileModelHome("http://www.google.com ", "", R.drawable.phoneee));
-        profileModelArrayList.add(new ProfileModelHome("https://nodejs.org/en/", "", R.drawable.phoneee));
-        profileModelArrayList.add(new ProfileModelHome("https://www.teamviewer.com/en/", "", R.drawable.webicon));
-        profileModelArrayList.add(new ProfileModelHome("http:www.bing.com", "", R.drawable.emaile));
+        profileModelArrayList.add(new ProfileModelHome("Church og God (International)", "http://www.jesusisthesubject.org/", R.drawable.phoneee));
+        profileModelArrayList.add(new ProfileModelHome("Centennial Annual General Assembly Highlights", "http://scog-assembly100.weebly.com/", R.drawable.phoneee));
+        profileModelArrayList.add(new ProfileModelHome("COG Constitution and By-Laws", "http://churchofgodinjamaica.org/app/constitutionCoG.pdf", R.drawable.webicon));
+        profileModelArrayList.add(new ProfileModelHome("Ardenne High School", "http://www.ardennehigh.com", R.drawable.emaile));
+        profileModelArrayList.add(new ProfileModelHome("Ardenne Preparatory and Extension High School", "http://www.ardenneprepextension.com/LkgaZ/home", R.drawable.emaile));
 
         lvResources = (ListView) findViewById(R.id.lblist);
         myAppAdapter = new MyAppAdapter(profileModelArrayList, getApplicationContext());
@@ -69,7 +70,7 @@ public class Resources extends AppCompatActivity {
 
         });
 
-        getSupportActionBar().setTitle("Contact Us");
+        getSupportActionBar().setTitle("Resources");
     }
 
 
@@ -143,23 +144,33 @@ public class Resources extends AppCompatActivity {
 
             if (i == 0) {
 
-                Toast.makeText(getApplicationContext(),"sumthn",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.jesusisthesubject.org/"));
+                startActivity(intent);
             }
 
             else if (i == 1) {
-                Toast.makeText(getApplicationContext(),"sumthn",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://scog-assembly100.weebly.com/"));
+                startActivity(intent);
 
             }
             else if (i == 2) {
-                Toast.makeText(getApplicationContext(),"sumthn",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://churchofgodinjamaica.org/app/webroot/files/Constitution%20&%20By-Laws_%20CoG.pdf"));
+                startActivity(intent);
 
             }
             else if (i == 3) {
-                Toast.makeText(getApplicationContext(),"sumthn",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.ardennehigh.com/"));
+                startActivity(intent);
 
             }
             else if (i == 4) {
-                Toast.makeText(getApplicationContext(),"sumthn",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.ardenneprepextension.com/LkgaZ/home"));
+                startActivity(intent);
             }
 
         }

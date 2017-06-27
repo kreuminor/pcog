@@ -4,6 +4,7 @@ package org.jamaica.pcog.mobile.mpage;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -26,6 +27,7 @@ import org.jamaica.pcog.mobile.ContactActivity;
 import org.jamaica.pcog.mobile.more.MapsActivity;
 import org.jamaica.pcog.mobile.R;
 import org.jamaica.pcog.mobile.profile.ProfileModelHome;
+import org.jamaica.pcog.mobile.resources.Resources;
 import org.jamaica.pcog.mobile.social.Facebook;
 import org.jamaica.pcog.mobile.social.Twitter;
 import org.jamaica.pcog.mobile.social.TwitterFragment;
@@ -68,7 +70,6 @@ public class MoreFragment extends Fragment {
         profileModelArrayList.add(new ProfileModelHome("YOUTUBE", "", R.drawable.logo));
         profileModelArrayList.add(new ProfileModelHome("INSTAGRAM", "", R.drawable.logo));
         profileModelArrayList.add(new ProfileModelHome("RESOURCES", "", R.drawable.logo));
-        profileModelArrayList.add(new ProfileModelHome("WEBSITE", "", R.drawable.logo));
 
         lvProfilesm = (GridView) v.findViewById(R.id.grid);
         myAppAdapter = new MyAppAdapter(profileModelArrayList, getActivity());
@@ -189,12 +190,11 @@ public class MoreFragment extends Fragment {
             }
             else if (i == 4) {
 
-                Toast.makeText(getContext(), "Resources", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), Resources.class);
+                startActivity(intent);
+                getActivity().finish();
             }
-            else if (i == 5) {
 
-                Toast.makeText(getContext(), "Website", Toast.LENGTH_SHORT).show();
-            }
         }
     }
     public static String StreamToString(InputStream in) throws IOException {

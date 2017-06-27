@@ -46,7 +46,7 @@ public class ContactActivity extends AppCompatActivity {
         profileModelArrayList.add(new ProfileModelHome("(876) 988-1857 ", "Main Office", R.drawable.phoneee));
         profileModelArrayList.add(new ProfileModelHome("(876) 988-7910 ", "Main Office", R.drawable.phoneee));
         profileModelArrayList.add(new ProfileModelHome("(876) 989-7865 ", "Senior Pastor", R.drawable.phoneee));
-        profileModelArrayList.add(new ProfileModelHome("www.google.com ", "Website", R.drawable.webicon));
+        profileModelArrayList.add(new ProfileModelHome("http://www.jesusisthesubject.org ", "Website", R.drawable.webicon));
         profileModelArrayList.add(new ProfileModelHome("Email Us ", "portmorechurchogod@gmail.com", R.drawable.emaile));
 
         lvProfilesm = (ListView) findViewById(R.id.lblist);
@@ -195,19 +195,9 @@ public class ContactActivity extends AppCompatActivity {
 
             }
                 else if (i == 3) {
-                ViewGroup vg = (ViewGroup) view;
-                TextView tv = (TextView) vg.findViewById(R.id.txtUsername);
-                Toast.makeText(ContactActivity.this, tv.getText().toString(), Toast.LENGTH_SHORT).show();
-
-
-                try{
-                    Intent phoneDialerIntent= new Intent(Intent.ACTION_DIAL);
-                    phoneDialerIntent.setData(Uri.parse("tel:" + tv.getText().toString()));
-                    startActivity(phoneDialerIntent);
-                }
-                catch (Exception e)
-                {
-                }
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://www.jesusisthesubject.org/"));
+                startActivity(intent);
 
             }
             else if (i == 4) {
