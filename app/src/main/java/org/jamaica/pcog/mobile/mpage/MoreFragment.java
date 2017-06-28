@@ -69,7 +69,6 @@ public class MoreFragment extends Fragment {
         profileModelArrayList.add(new ProfileModelHome("TWITTER", "", R.drawable.logo));
         profileModelArrayList.add(new ProfileModelHome("YOUTUBE", "", R.drawable.logo));
         profileModelArrayList.add(new ProfileModelHome("INSTAGRAM", "", R.drawable.logo));
-        profileModelArrayList.add(new ProfileModelHome("RESOURCES", "", R.drawable.logo));
 
         lvProfilesm = (GridView) v.findViewById(R.id.grid);
         myAppAdapter = new MyAppAdapter(profileModelArrayList, getActivity());
@@ -187,12 +186,6 @@ public class MoreFragment extends Fragment {
             else if (i == 3) {
 
                 Toast.makeText(getContext(), "Instagram", Toast.LENGTH_SHORT).show();
-            }
-            else if (i == 4) {
-
-                Intent intent = new Intent(getActivity(), Resources.class);
-                startActivity(intent);
-                getActivity().finish();
             }
 
         }

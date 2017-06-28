@@ -5,10 +5,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="@string/latestarttimes"
+        android:text="@string/weeklyservices"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="14sp" />
 </ScrollView>

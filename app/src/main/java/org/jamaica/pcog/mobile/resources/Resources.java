@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -21,6 +22,7 @@ import com.bumptech.glide.Glide;
 import org.jamaica.pcog.mobile.ContactActivity;
 import org.jamaica.pcog.mobile.MainActivity;
 import org.jamaica.pcog.mobile.R;
+import org.jamaica.pcog.mobile.about.AboutActivity;
 import org.jamaica.pcog.mobile.profile.ProfileModelHome;
 
 import java.util.ArrayList;
@@ -31,6 +33,8 @@ public class Resources extends AppCompatActivity {
     private MyAppAdapter myAppAdapter;
     private ArrayList<ProfileModelHome> profileModelArrayList;
 
+    ImageButton img;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,11 +43,12 @@ public class Resources extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         profileModelArrayList = new ArrayList<>();
-        profileModelArrayList.add(new ProfileModelHome("Church og God (International)", "http://www.jesusisthesubject.org/", R.drawable.phoneee));
+        profileModelArrayList.add(new ProfileModelHome("Church of God (International)", "http://www.jesusisthesubject.org/", R.drawable.phoneee));
+        profileModelArrayList.add(new ProfileModelHome("Church of God (National)", "http://churchofgodinjamaica.org/", R.drawable.phoneee));
         profileModelArrayList.add(new ProfileModelHome("Centennial Annual General Assembly Highlights", "http://scog-assembly100.weebly.com/", R.drawable.phoneee));
-        profileModelArrayList.add(new ProfileModelHome("COG Constitution and By-Laws", "http://churchofgodinjamaica.org/app/constitutionCoG.pdf", R.drawable.webicon));
-        profileModelArrayList.add(new ProfileModelHome("Ardenne High School", "http://www.ardennehigh.com", R.drawable.emaile));
-        profileModelArrayList.add(new ProfileModelHome("Ardenne Preparatory and Extension High School", "http://www.ardenneprepextension.com/LkgaZ/home", R.drawable.emaile));
+        profileModelArrayList.add(new ProfileModelHome("COG Constitution and by Laws", "http://churchofgodinjamaica.org/app/constitutionCoG.pdf/", R.drawable.webicon));
+        profileModelArrayList.add(new ProfileModelHome("Ardenne High School", "http://www.ardennehigh.com/", R.drawable.emaile));
+        profileModelArrayList.add(new ProfileModelHome("Ardenne Preparatory and Extension High School", "http://www.ardenneprepextension.com/", R.drawable.emaile));
 
         lvResources = (ListView) findViewById(R.id.lblist);
         myAppAdapter = new MyAppAdapter(profileModelArrayList, getApplicationContext());
@@ -51,23 +56,17 @@ public class Resources extends AppCompatActivity {
         lvResources.setOnItemClickListener(new ItemList());
 
         // Toolbar
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
         // add back arrow to toolbar
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setDisplayShowHomeEnabled(true);
-        }
+        img = (ImageButton) findViewById(R.id.backbtn);
 
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+        img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
-
         });
 
         getSupportActionBar().setTitle("Resources");
@@ -150,29 +149,43 @@ public class Resources extends AppCompatActivity {
             }
 
             else if (i == 1) {
+
                 Intent intent = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("http://scog-assembly100.weebly.com/"));
+                        Uri.parse("http://churchofgodinjamaica.org/"));
                 startActivity(intent);
 
             }
             else if (i == 2) {
+
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://scog-assembly100.weebly.com/"));
+                startActivity(intent);
+
+
+
+            }
+            else if (i == 3) {
+
                 Intent intent = new Intent(Intent.ACTION_VIEW,
                         Uri.parse("http://churchofgodinjamaica.org/app/webroot/files/Constitution%20&%20By-Laws_%20CoG.pdf"));
                 startActivity(intent);
 
+
             }
-            else if (i == 3) {
+            else if (i == 4) {
+
                 Intent intent = new Intent(Intent.ACTION_VIEW,
                         Uri.parse("http://www.ardennehigh.com/"));
                 startActivity(intent);
 
             }
             else if (i == 4) {
+
                 Intent intent = new Intent(Intent.ACTION_VIEW,
                         Uri.parse("http://www.ardenneprepextension.com/LkgaZ/home"));
                 startActivity(intent);
-            }
 
+            }
         }
     }
 

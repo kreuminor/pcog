@@ -4,22 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.jamaica.pcog.mobile.more.MapsActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="org.jamaica.pcog.mobile.about.activity.VisionActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorPrimary"
         android:orientation="horizontal">
+
 
         <ImageButton
             android:id="@+id/backbtn"
-            android:layout_width="25sp"
-            android:layout_height="25sp"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
             android:layout_gravity="center"
             android:layout_marginLeft="15sp"
-            android:layout_marginRight="15sp"
             android:background="@color/colorPrimary"
             android:scaleType="fitXY"
             android:src="@drawable/arrow2" />
@@ -31,45 +31,47 @@
             android:background="@color/colorPrimary"
             android:gravity="left|center"
             android:paddingLeft="20dp"
-            android:text="Church Location"
+            android:text="Our Vision"
             android:textColor="@android:color/background_light"
             android:textSize="18sp"
             android:visibility="visible"
-            tools:text="Church Location" />
+            tools:text="Our Vision" />
 
         <include
             layout="@layout/app_bar_main"
             android:layout_width="1dp"
             android:layout_height="wrap_content"
-            android:visibility="gone"/>
+            android:visibility="gone">
+
+        </include>
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:elevation="4dp"
         android:orientation="vertical">
 
-        <fragment
-            android:id="@+id/map"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10sp"
-            android:layout_weight="1" />
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            app:cardElevation="6sp">
 
-        <android.support.design.widget.CoordinatorLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <ListView
-                android:id="@+id/lblist"
+            <WebView
+                android:id="@+id/home1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8sp"
-                android:divider="@null" />
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:padding="8sp">
 
-        </android.support.design.widget.CoordinatorLayout>
+
+            </WebView>
+        </android.support.v7.widget.CardView>
 
     </LinearLayout>
 

@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -18,10 +19,10 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 
 import org.jamaica.pcog.mobile.*;
-import org.jamaica.pcog.mobile.announcement.InboxActivity;
-import org.jamaica.pcog.mobile.mpage.Welcomefragment;
+
+import org.jamaica.pcog.mobile.bible.activities.SearchActivity;
 import org.jamaica.pcog.mobile.profile.ProfileModelHome;
-import org.jamaica.pcog.mobile.time.TimesActivity;
+
 
 import java.util.ArrayList;
 
@@ -31,6 +32,8 @@ public class PodcastActivity extends AppCompatActivity {
     private MyAppAdapter myAppAdapter;
     private ArrayList<ProfileModelHome> profileModelArrayList;
 
+    ImageButton img;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,30 +42,28 @@ public class PodcastActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         profileModelArrayList = new ArrayList<>();
-        profileModelArrayList.add(new ProfileModelHome("Sermon on the Mount", "11th June 2017", R.drawable.mic));
-        profileModelArrayList.add(new ProfileModelHome("3 Loaves, two fishes", "7th May, 2017", R.drawable.mic));
-        profileModelArrayList.add(new ProfileModelHome("How to be an Effective Leader", "11th June, 017", R.drawable.mic));
-        profileModelArrayList.add(new ProfileModelHome("Anniversary Banquet", "12th December, 2017", R.drawable.mic));
+        profileModelArrayList.add(new ProfileModelHome("Sermon 1", "11th June 2017", R.drawable.pod1));
+        profileModelArrayList.add(new ProfileModelHome("Sermon 2", "7th May, 2017", R.drawable.pod1));
+        profileModelArrayList.add(new ProfileModelHome("Sermon 3", "11th June, 017", R.drawable.pod1));
+        profileModelArrayList.add(new ProfileModelHome("Sermon 4", "12th December, 2017", R.drawable.pod1));
 
         lvProfilesm = (ListView) findViewById(R.id.lvProfilesm);
         myAppAdapter = new MyAppAdapter(profileModelArrayList, getApplicationContext());
         lvProfilesm.setAdapter(myAppAdapter);
         lvProfilesm.setOnItemClickListener(new ItemList());
 
-        // add back arrow to toolbar
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setDisplayShowHomeEnabled(true);
-        }
+        //Toolbar
 
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+        img = (ImageButton) findViewById(R.id.backbtn);
+
+        img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), org.jamaica.pcog.mobile.MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
-
         });
 
         getSupportActionBar().setTitle("Podcasts");
@@ -158,7 +159,9 @@ public class PodcastActivity extends AppCompatActivity {
             }
             else if (i == 3) {
 
-                Toast.makeText(getApplicationContext(), "Media will be here!!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), Sermon2.class);
+                startActivity(intent);
+                finish();
 
             }
         }

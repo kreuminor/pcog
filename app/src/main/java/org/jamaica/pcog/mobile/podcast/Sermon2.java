@@ -28,7 +28,7 @@ public class Sermon2 extends Activity implements OnClickListener,
 	private SeekBar seekBar;
 	private MediaPlayer mediaPlayer;
 	private int lengthOfAudio;
-	private final String URL = "https://drive.google.com/uc?export=download&id=0B1VzuZrVMPLNUWRqZjNTY1dKS00";
+	private final String URL = "https://drive.google.com/uc?export=download&id=0B1VzuZrVMPLNT1Y5YnFOQ002QlU";
 	private static final int MINUTES_IN_AN_HOUR = 60;
 	private static final int SECONDS_IN_A_MINUTE = 60;
 	private final Handler handler = new Handler();

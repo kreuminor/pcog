@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
@@ -49,6 +50,7 @@ public class InboxActivity extends ActionBarActivity {
     private ListView lvInbox;
     private ProgressDialog dialog;
     ImageButton img;
+    FloatingActionButton fab_email;
 
     // Git error fix - http://stackoverflow.com/questions/16614410/android-studio-checkout-github-error-createprocess-2-windows
 
@@ -72,6 +74,24 @@ public class InboxActivity extends ActionBarActivity {
             }
         });
         getSupportActionBar().setTitle("Announcements");
+
+        // Floating Action Button
+        fab_email = (FloatingActionButton)findViewById(R.id.fab_email);
+
+        fab_email.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Email = new Intent(Intent.ACTION_SEND);
+                Email.setType("text/email");
+                Email.putExtra(Intent.EXTRA_EMAIL,
+                        new String[]{"portmorechurchofgod@gmail.com"});  //PCOG's email
+                Email.putExtra(Intent.EXTRA_SUBJECT,
+                        "Add your Subject"); // Email 's Subject
+                Email.putExtra(Intent.EXTRA_TEXT, "Dear PCOG PR," + "");  //Email 's Greeting text
+                startActivity(Intent.createChooser(Email, "Send Announcement Request:"));
+            }
+        });
+
 
         dialog = new ProgressDialog(this);
         dialog.setIndeterminate(true);

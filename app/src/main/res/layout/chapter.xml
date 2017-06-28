@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent"
-  android:layout_height="fill_parent"
-  android:orientation="vertical">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
 
   <LinearLayout
       android:layout_width="match_parent"
@@ -42,6 +42,39 @@
         android:textColor="@color/cardview_light_background"
         android:textSize="18sp" />
 
+    <ImageButton
+        android:id="@+id/bmark"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="2sp"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitXY"
+        android:src="@drawable/bookmark" />
+
+    <ImageButton
+        android:id="@+id/bfont"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="2sp"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitXY"
+        android:src="@drawable/textc" />
+
+    <ImageButton
+        android:id="@+id/bmenu"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitXY"
+        android:src="@drawable/chapter" />
+
   </LinearLayout>
 
   <LinearLayout
@@ -68,16 +101,16 @@
       android:layout_width="fill_parent"
       android:layout_height="fill_parent"
       android:layout_margin="5sp" />
-               
-    <ViewStub
-        android:id="@+id/stub_navigation"
-        android:inflatedId="@+id/panel_navigation"
 
-        android:layout="@layout/navigation_overlay"
+  <ViewStub
+      android:id="@+id/stub_navigation"
+      android:layout_width="fill_parent"
 
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginTop="-51dip" />
+      android:layout_height="wrap_content"
+
+      android:layout_gravity="bottom"
+      android:layout_marginTop="-51dip"
+      android:inflatedId="@+id/panel_navigation"
+      android:layout="@layout/navigation_overlay" />
 
 </LinearLayout>

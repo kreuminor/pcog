@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="90sp">
+    android:layout_height="70sp">
 
   <ImageView
       android:id="@+id/book_image"
-      android:layout_width="40sp"
-      android:layout_height="40sp"
+      android:layout_width="50sp"
+      android:layout_height="50sp"
       android:layout_alignParentStart="true"
       android:layout_centerVertical="true"
       android:layout_marginLeft="8sp"
@@ -21,13 +21,13 @@
       android:id="@+id/book_name"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_toEndOf="@+id/book_image"
       android:clickable="false"
       android:focusable="false"
       android:padding="5sp"
       android:text="testing"
-      android:textSize="18sp"
-      android:layout_centerVertical="true"
-      android:layout_toEndOf="@+id/book_image" />
+      android:textSize="18sp" />
 
   <ImageView
       android:id="@+id/book_chapter_selection"

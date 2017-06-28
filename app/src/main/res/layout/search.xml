@@ -48,7 +48,7 @@
         android:id="@+id/search_term"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10sp"
+        android:layout_margin="5dip"
         android:hint="Search term"
         android:paddingLeft="5sp" />
 
@@ -95,7 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/mybuttonhome"
+            android:background="@color/cardview_dark_background"
             android:text="Search"
             android:textAlignment="center"
             android:textColor="@color/bg_splash" />

@@ -20,17 +20,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import org.jamaica.pcog.mobile.about.AboutActivity;
 import org.jamaica.pcog.mobile.announcement.InboxActivity;
 import org.jamaica.pcog.mobile.bible.activities.Bible;
 import org.jamaica.pcog.mobile.more.MapsActivity;
-import org.jamaica.pcog.mobile.mpage.BibleFragment;
 import org.jamaica.pcog.mobile.mpage.EventsFragment;
 import org.jamaica.pcog.mobile.mpage.MoreFragment;
 import org.jamaica.pcog.mobile.mpage.Welcomefragment;
 import org.jamaica.pcog.mobile.podcast.PodcastActivity;
-import org.jamaica.pcog.mobile.podcast.StreamingMp3Player;
 import org.jamaica.pcog.mobile.time.TimesActivity;
 
 public class MainActivity extends AppCompatActivity
@@ -105,16 +103,12 @@ public class MainActivity extends AppCompatActivity
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
 
-        } else if (id == R.id.nav_location) {
-            Intent intent = new Intent(MainActivity.this, MapsActivity.class);
-            startActivity(intent);
-            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-            finish();
         } else if (id == R.id.nav_call) {
             Intent intent = new Intent(MainActivity.this, ContactActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
+
         } else if (id == R.id.nav_lead) {
             Intent intent = new Intent(MainActivity.this, LeadershipActivity.class);
             startActivity(intent);
@@ -129,6 +123,12 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_bible) {
             Intent intent = new Intent(MainActivity.this, Bible.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+            finish();
+
+        }else if (id == R.id.nav_about) {
+            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();

@@ -36,11 +36,11 @@
                 android:id="@+id/txtUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
                 android:hapticFeedbackEnabled="true"
                 android:text="Username"
                 android:textAppearance="@android:style/TextAppearance.Theme"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="15sp" />
+                android:textColor="@color/colorPrimaryDark" />
 
 
             <TextView
@@ -50,7 +50,7 @@
                 android:hapticFeedbackEnabled="true"
                 android:text="country"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="normal|italic"
                 android:visibility="visible" />
         </LinearLayout>

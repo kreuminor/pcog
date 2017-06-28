@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="@string/halfdaytimes"
+        android:text="@string/sundayschool"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textSize="14sp" />
 </ScrollView>

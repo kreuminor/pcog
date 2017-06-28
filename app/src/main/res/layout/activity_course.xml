@@ -5,36 +5,77 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_container"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@color/colorPrimary"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="com.hearttrust.hta.QualActivity">
 
 
-        <ImageButton
-            android:id="@+id/backbtn"
-            android:layout_width="25dip"
-            android:layout_height="25dip"
-            android:layout_gravity="center"
-            android:layout_marginLeft="15sp"
-            android:layout_marginRight="15sp"
-            android:background="@color/colorPrimary"
-            android:scaleType="fitXY"
-            android:src="@drawable/arrow2" />
-
-        <include
-            layout="@layout/app_bar_main"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="visible">
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
 
-        </include>
 
-    </LinearLayout>
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:background="@color/colorPrimary"
+                android:scaleType="fitXY"
+                android:src="@drawable/arrow2" />
 
-    <ListView
-        android:id="@+id/lvInbox"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+            <include
+                layout="@layout/app_bar_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+            </include>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dip"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lvInbox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="@dimen/fab_margin"
+                android:layout_weight="1"
+                android:elevation="6dp"
+                android:src="@android:drawable/sym_action_email"
+                android:visibility="visible"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:layout_anchorGravity="bottom|right|end"
+                app:pressedTranslationZ="12dp"
+                tools:targetApi="lollipop" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
 </LinearLayout>

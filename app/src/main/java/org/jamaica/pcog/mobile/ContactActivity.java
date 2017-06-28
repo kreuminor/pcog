@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -20,6 +21,8 @@ import android.widget.Toast;
 
 
 import com.bumptech.glide.Glide;
+
+import org.jamaica.pcog.mobile.about.AboutActivity;
 import org.jamaica.pcog.mobile.profile.ProfileModelHome;
 
 import java.util.ArrayList;
@@ -34,6 +37,8 @@ public class ContactActivity extends AppCompatActivity {
     FloatingActionButton fab_plus, fab_twitter, fab_facebook, fab_youtube;
     Animation FabOpen, FabClose, FabRClockwise, FabRAntiClockwise;
     boolean isOpen = false;
+
+    ImageButton img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,19 +64,16 @@ public class ContactActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         // add back arrow to toolbar
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setDisplayShowHomeEnabled(true);
-        }
+        img = (ImageButton) findViewById(R.id.backbtn);
 
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+        img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ContactActivity.this, MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
-
         });
 
         getSupportActionBar().setTitle("Contact Us");

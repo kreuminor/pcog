@@ -35,6 +35,28 @@
               android:textSize="18sp" />
 
           <ImageButton
+              android:id="@+id/bmark"
+              android:layout_width="25dip"
+              android:layout_height="25dip"
+              android:layout_gravity="center"
+              android:layout_marginLeft="15sp"
+              android:layout_marginRight="2sp"
+              android:background="@color/colorPrimary"
+              android:scaleType="fitXY"
+              android:src="@drawable/bookmark" />
+
+          <ImageButton
+              android:id="@+id/rmark"
+              android:layout_width="25dip"
+              android:layout_height="25dip"
+              android:layout_gravity="center"
+              android:layout_marginLeft="15sp"
+              android:layout_marginRight="2sp"
+              android:background="@color/colorPrimary"
+              android:scaleType="fitXY"
+              android:src="@drawable/rbookmark" />
+
+          <ImageButton
               android:id="@+id/bsearch"
               android:layout_width="25dip"
               android:layout_height="25dip"

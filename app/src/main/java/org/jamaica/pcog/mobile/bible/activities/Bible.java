@@ -39,6 +39,8 @@ public class Bible extends ListActivity implements OnItemClickListener {
 
     List<Book> books = null;
 	ImageButton img;
+	ImageButton img2;
+	ImageButton img3;
     
     /** Called when the activity is first created. */
     @Override
@@ -73,6 +75,8 @@ public class Bible extends ListActivity implements OnItemClickListener {
 		});
 
 		img = (ImageButton) findViewById(R.id.bsearch);
+		img2= (ImageButton) findViewById(R.id.rmark);
+		img3= (ImageButton) findViewById(R.id.bmark);
 
 		img.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -81,6 +85,20 @@ public class Bible extends ListActivity implements OnItemClickListener {
 				startActivity(intent);
 				overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 				finish();
+			}
+		});
+
+		img2.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				removeBookmarks();
+			}
+		});
+
+		img3.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				loadBookmark();
 			}
 		});
     }

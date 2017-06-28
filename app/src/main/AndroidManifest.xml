@@ -107,8 +107,6 @@
 
         <activity android:name=".podcast.StreamingMp3Player"
             android:screenOrientation="portrait"/>
-        <activity android:name=".podcast.MainActivity"
-            android:screenOrientation="portrait"/>
 
         <activity android:name=".podcast.PodcastActivity"
             android:screenOrientation="portrait"/>
@@ -119,6 +117,12 @@
         <activity android:name=".podcast.Sermon3"
             android:screenOrientation="portrait"/>
         <activity android:name=".resources.Resources"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".about.AboutActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".about.activity.VisionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".about.activity.MissionActivity"
             android:screenOrientation="portrait"/>
 
     </application>
