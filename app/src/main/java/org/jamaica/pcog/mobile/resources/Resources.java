@@ -179,7 +179,7 @@ public class Resources extends AppCompatActivity {
                 startActivity(intent);
 
             }
-            else if (i == 4) {
+            else if (i == 5) {
 
                 Intent intent = new Intent(Intent.ACTION_VIEW,
                         Uri.parse("http://www.ardenneprepextension.com/LkgaZ/home"));
