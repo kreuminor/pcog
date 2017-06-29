@@ -116,5 +116,7 @@
     <string name="local">Our Location</string>
     <string name="location_text">PCOG is located at 58a Barbara Avenue, Edgewater, Jamaica</string>
 
+    <string name="search">Search</string>
+    <string name="nothing_playing">Nothing is Playing</string>
 
 </resources>

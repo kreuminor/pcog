@@ -39,8 +39,7 @@
                 android:hapticFeedbackEnabled="true"
                 android:text="Username"
                 android:textAppearance="@android:style/TextAppearance.Theme"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="15sp" />
+                android:textColor="@color/colorPrimaryDark" />
 
 
             <TextView

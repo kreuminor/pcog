@@ -30,27 +30,25 @@
                 android:id="@+id/txtUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_marginLeft="5dip"
-                android:gravity="center"
                 android:paddingLeft="15dip"
                 android:text="Text"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="16dp"
+                android:textSize="18sp"
                 android:visibility="visible" />
 
             <TextView
                 android:id="@+id/txtCountry"
-                android:layout_width="match_parent"
+                android:layout_width="375dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dip"
+                android:layout_marginLeft="5dip"
                 android:paddingLeft="15dip"
                 android:text="text"
+                android:textAlignment="viewStart"
                 android:textColor="@color/text"
-                android:textSize="12dp"
+                android:textSize="15sp"
                 android:visibility="visible"
                 tools:text="Text" />
 

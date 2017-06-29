@@ -46,9 +46,9 @@ public class Resources extends AppCompatActivity {
         profileModelArrayList.add(new ProfileModelHome("Church of God (International)", "http://www.jesusisthesubject.org/", R.drawable.phoneee));
         profileModelArrayList.add(new ProfileModelHome("Church of God (National)", "http://churchofgodinjamaica.org/", R.drawable.phoneee));
         profileModelArrayList.add(new ProfileModelHome("Centennial Annual General Assembly Highlights", "http://scog-assembly100.weebly.com/", R.drawable.phoneee));
-        profileModelArrayList.add(new ProfileModelHome("COG Constitution and by Laws", "http://churchofgodinjamaica.org/app/constitutionCoG.pdf/", R.drawable.webicon));
+        profileModelArrayList.add(new ProfileModelHome("COG Constitution and by Laws", "http://churchofgodinjamaica.org/constitution.pdf/", R.drawable.webicon));
         profileModelArrayList.add(new ProfileModelHome("Ardenne High School", "http://www.ardennehigh.com/", R.drawable.emaile));
-        profileModelArrayList.add(new ProfileModelHome("Ardenne Preparatory and Extension High School", "http://www.ardenneprepextension.com/", R.drawable.emaile));
+        profileModelArrayList.add(new ProfileModelHome("Ardenne Preparatory and Ext High School", "http://www.ardenneprepextension.com/", R.drawable.emaile));
 
         lvResources = (ListView) findViewById(R.id.lblist);
         myAppAdapter = new MyAppAdapter(profileModelArrayList, getApplicationContext());

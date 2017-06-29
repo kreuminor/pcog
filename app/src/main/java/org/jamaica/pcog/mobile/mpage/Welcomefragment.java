@@ -13,13 +13,11 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
-import org.jamaica.pcog.mobile.LeadershipActivity;
 import org.jamaica.pcog.mobile.R;
 import org.jamaica.pcog.mobile.announcement.InboxActivity;
 import org.jamaica.pcog.mobile.podcast.PodcastActivity;

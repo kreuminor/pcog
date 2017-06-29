@@ -42,8 +42,8 @@ public class PodcastActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         profileModelArrayList = new ArrayList<>();
-        profileModelArrayList.add(new ProfileModelHome("Sermon 1", "11th June 2017", R.drawable.pod1));
-        profileModelArrayList.add(new ProfileModelHome("Sermon 2", "7th May, 2017", R.drawable.pod1));
+        profileModelArrayList.add(new ProfileModelHome("God's Word: Foundation for the Family", "11th June 2017", R.drawable.pod1));
+        profileModelArrayList.add(new ProfileModelHome("For Every Blessing, Bless the Lord", "7th May, 2017", R.drawable.pod1));
         profileModelArrayList.add(new ProfileModelHome("Sermon 3", "11th June, 017", R.drawable.pod1));
         profileModelArrayList.add(new ProfileModelHome("Sermon 4", "12th December, 2017", R.drawable.pod1));
 

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:configChanges="orientation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="8dip"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/bg_screen2"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lineSpacingExtra="2sp"
+            android:padding="5sp"
+            android:text="Please rate us on Google Play"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnClose"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Close"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+</ScrollView>

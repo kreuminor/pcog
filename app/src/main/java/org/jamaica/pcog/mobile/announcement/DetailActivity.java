@@ -45,7 +45,7 @@ public class DetailActivity extends ActionBarActivity {
                 finish();
             }
         });
-        getSupportActionBar().setTitle("Details");
+        getSupportActionBar().setTitle("Announcement Details");
 
         // setting up text views and stuff
         setUpUIViews();

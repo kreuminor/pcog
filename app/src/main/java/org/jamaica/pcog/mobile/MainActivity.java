@@ -24,7 +24,6 @@ import android.widget.TextView;
 import org.jamaica.pcog.mobile.about.AboutActivity;
 import org.jamaica.pcog.mobile.announcement.InboxActivity;
 import org.jamaica.pcog.mobile.bible.activities.Bible;
-import org.jamaica.pcog.mobile.more.MapsActivity;
 import org.jamaica.pcog.mobile.mpage.EventsFragment;
 import org.jamaica.pcog.mobile.mpage.MoreFragment;
 import org.jamaica.pcog.mobile.mpage.Welcomefragment;

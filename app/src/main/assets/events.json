@@ -1,0 +1,90 @@
+[
+      {
+        "name": "MCG Convention",
+        "day": "26",
+        "month": "JUN",
+        "date": "26th June 2017",
+        "description": "Men of the Church of God Convention",
+        "email": "colin.holness@gmail.com"
+       
+      },
+      {
+        "name": "Fun Day",
+        "day": "12",
+        "month": "AUG",
+        "date": "26th June 2017",
+        "description": "Bootcamp agenda",
+        "email": ""
+
+      },
+      {
+        "name": "Sports Day",
+        "day": "15",
+        "month": "AUG",
+        "date": "26th June 2017",
+        "description": "Bootcamp agenda",
+        "email": ""
+
+      },
+      {
+        "name": "WCG Convention",
+        "day": "17",
+        "month": "AUG",
+        "date": "26th June 2017",
+        "description": "Bootcamp agenda",
+        "email": ""
+
+      },
+      {
+        "name": "Deeper Life Crusade",
+        "day": "19",
+        "month": "AUG",
+        "date": "26th June 2017",
+        "description": "Bootcamp agenda",
+        "email": ""
+
+      },
+      {
+        "name": "Harvest",
+        "day": "24",
+        "month": "SEP",
+        "date": "26th June 2017",
+        "description": "Bootcamp agenda",
+        "email": ""
+
+      },
+       {
+        "name": "Anniversary Service",
+        "day": "19",
+        "month": "OCT",
+        "date": "26th June 2017",
+        "description": "Bootcamp agenda",
+        "email": ""
+
+      },
+       {
+        "name": "Church Rally",
+        "day": "19",
+        "month": "NOV",
+        "date": "26th June 2017",
+        "description": "Bootcamp agenda",
+        "email": ""
+
+      },
+       {
+        "name": "Watch Night Service",
+        "day": "29",
+        "month": "DEC",
+        "date": "26th June 2017",
+        "description": "Bootcamp agenda",
+        "email": ""
+      },
+      {
+        "name": "New Years Service",
+        "day": "01",
+        "month": "JAN",
+        "date": "01st January 2018",
+        "description": "Bootcamp agenda",
+        "email": ""
+      }
+    ]

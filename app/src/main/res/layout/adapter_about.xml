@@ -7,10 +7,10 @@
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="30sp"
-        android:layout_height="30sp"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="16dp" />
+        android:layout_marginLeft="14sp" />
 
     <TextView
         android:id="@+id/title"

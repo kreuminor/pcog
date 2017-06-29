@@ -61,13 +61,13 @@ public class AboutActivity extends AppCompatActivity implements AdapterView.OnIt
         mAboutItems.clear();
         mAboutItems.add(new AboutItem(getString(R.string.vision),
                 getString(R.string.vision_text),
-                R.drawable.arrow1));
+                R.drawable.logo1));
         mAboutItems.add(new AboutItem(getString(R.string.mission),
                 getString(R.string.mission_text),
-                R.drawable.arrow1));
+                R.drawable.logo1));
         mAboutItems.add(new AboutItem(getString(R.string.local),
                 getString(R.string.location_text),
-                R.drawable.arrow1));
+                R.drawable.logo1));
 
 
     }
