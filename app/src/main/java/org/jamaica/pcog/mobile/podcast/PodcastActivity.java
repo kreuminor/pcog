@@ -159,7 +159,7 @@ public class PodcastActivity extends AppCompatActivity {
             }
             else if (i == 3) {
 
-                Intent intent = new Intent(getApplicationContext(), Sermon2.class);
+                Intent intent = new Intent(getApplicationContext(), Sermon3.class);
                 startActivity(intent);
                 finish();
 

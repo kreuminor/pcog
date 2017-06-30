@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp">
+
+
+    <Space
+        android:id="@+id/dummy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="180sp"
+        android:layout_height="210sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/Admin"
+        android:longClickable="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        app:srcCompat="@drawable/leader_gordon" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/Admin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimaryDark"
+        tools:ignore="RelativeOverlap"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txt_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/Admin"
+        android:textAlignment="viewStart"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="?android:attr/colorPrimary"
+        android:textSize="12sp"
+        android:layout_below="@+id/txt_name"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/btn_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_call"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp"
+        android:src="@drawable/ic_action_email"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btn_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txt_subtitle"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp"
+        android:src="@drawable/ic_action_call"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+
+</RelativeLayout>

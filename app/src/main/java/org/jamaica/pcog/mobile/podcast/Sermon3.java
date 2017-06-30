@@ -52,6 +52,7 @@ public class Sermon3 extends Activity implements OnClickListener,
 		setContentView(R.layout.activity_main2);
 		initialize_Controls();
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+		toolbar.setTitle("Sermon 3");
 
 		// add back arrow to toolbar
 		img = (ImageButton) findViewById(R.id.backbtn);

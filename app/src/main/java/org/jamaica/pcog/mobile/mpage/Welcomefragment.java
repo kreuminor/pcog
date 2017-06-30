@@ -60,8 +60,9 @@ public class Welcomefragment extends Fragment {
         profileModelArrayList = new ArrayList<>();
         profileModelArrayList.add(new ProfileModelHome("Announcements", "?", R.drawable.logo1));
         profileModelArrayList.add(new ProfileModelHome("Order of Service", "", R.drawable.logo1));
-        profileModelArrayList.add(new ProfileModelHome("Resources", "", R.drawable.logo1));
         profileModelArrayList.add(new ProfileModelHome("Podcast", "", R.drawable.logo1));
+        profileModelArrayList.add(new ProfileModelHome("Resources", "", R.drawable.logo1));
+
 
         lvProfilesm = (ListView) v.findViewById(R.id.lvProfilesm);
         myAppAdapter = new MyAppAdapter(profileModelArrayList, getContext());
@@ -162,14 +163,14 @@ public class Welcomefragment extends Fragment {
 
             } else if (i == 2) {
 
-                Intent intent = new Intent(getActivity(), Resources.class);
+                Intent intent = new Intent(getActivity(), PodcastActivity.class);
                 startActivity(intent);
                 getActivity().finish();
 
             }
             else if (i == 3) {
 
-                Intent intent = new Intent(getActivity(), PodcastActivity.class);
+                Intent intent = new Intent(getActivity(), Resources.class);
                 startActivity(intent);
                 getActivity().finish();
 

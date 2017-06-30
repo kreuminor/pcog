@@ -265,8 +265,9 @@ public class ChapterActivity extends ListActivity implements OnItemLongClickList
 		if (this.book != null)
 			this.setTitle(this.book);
 
-		((TextView)findViewById(R.id.chapter_heading)).setText("Chapter " + this.chapter);
+		((TextView)findViewById(R.id.chapter_heading)).setText(" " + this.chapter);
 		((TextView)findViewById(R.id.book)).setText(this.book);
+		((TextView)findViewById(R.id.book1)).setText(this.book);
 
 		this.verses = BibleLibrary.getVerses(getContentResolver(), this.bookId, this.chapter);
 		Log.d(TAG, "Loaded " + this.verses.size() + " verses");

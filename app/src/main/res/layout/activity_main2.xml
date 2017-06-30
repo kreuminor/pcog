@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/cardview_dark_background"
+    android:background="@drawable/peace"
     android:orientation="vertical">
 
     <LinearLayout
@@ -24,23 +24,11 @@
             android:scaleType="fitXY"
             android:src="@drawable/arrow2" />
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="56sp"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:paddingLeft="15sp"
-            android:text="Sermon"
-            android:textColor="@color/bg_splash"
-            android:textSize="18sp"
-            tools:text="Sermon" />
-
         <include
             layout="@layout/app_bar_main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone">
+            android:visibility="visible">
 
         </include>
 
@@ -115,7 +103,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="3dp"
         android:text=""
-        android:textColor="#ffff00" />
+        android:textColor="@color/cardview_light_background" />
 
     <SeekBar
         android:id="@+id/seekBar"

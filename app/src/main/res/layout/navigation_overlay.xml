@@ -10,11 +10,22 @@
     android:paddingBottom="4dip"
     
     android:background="#99000000" >
-    
-    <ImageButton android:id="@+id/navigation_previous"
-        android:text="Previous"
-        android:src="@drawable/back"
+
+    <ImageButton
+        android:id="@+id/navigation_previous"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:src="@drawable/back"
+        android:text="Previous" />
+
+    <Space
+        android:layout_width="50sp"
+        android:layout_height="wrap_content"
+        android:layout_weight="50" />
+
+    <Space
+        android:layout_width="50sp"
         android:layout_height="wrap_content"
         android:layout_weight="50" />
 

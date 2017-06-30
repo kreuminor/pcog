@@ -8,5 +8,5 @@
     <SeekBar android:id="@+id/change_font_seekbar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:padding="20sp" />
+        android:padding="20sp"/>
 </LinearLayout>

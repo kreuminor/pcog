@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
+import org.jamaica.pcog.mobile.ContactActivity;
 import org.jamaica.pcog.mobile.MainActivity;
 import org.jamaica.pcog.mobile.R;
 import org.jamaica.pcog.mobile.about.activity.MissionActivity;

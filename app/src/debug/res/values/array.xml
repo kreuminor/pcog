@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="admin_names">
+        <item>Rev. Courtney Gordon</item>
+        <item>Gary Goetzinger</item>
+        <item>Allyson Walroth</item>
+        <item>Lamanzer Williams</item>
+        <item>Lori Jackson</item>
+    </string-array>
+
+    <string-array name="admin_subtitles">
+        <item>Senior Paster</item>
+        <item>Junior Pastor</item>
+        <item>Elder</item>
+        <item>Deacon</item>
+        <item>Deaconess</item>
+    </string-array>
+
+    <string-array name="admin_emails">
+        <item>cgordon@pcog.org</item>
+        <item>ggoetzin@ardenneprep.org</item>
+        <item>awalroth@ardenneprep.org</item>
+        <item>lwilliam@ardenneprep.org</item>
+        <item>ljackson@ardenneprep.org</item>
+    </string-array>
+
+    <string-array name="admin_phones">
+        <item>(876) 988-1857</item>
+        <item>(876) 988-1857</item>
+        <item>(876) 988-1857</item>
+        <item>(876) 988-1857</item>
+        <item>(876) 988-1857</item>
+    </string-array>
+
+    <string-array name="admin_bios">
+        <item>As the Paster of this church, my responsibilities include supervising the overall building operations, overseeing curriculum development and improvement, evaluating and monitoring instructional staff by visiting classrooms on a daily basis, planning and executing professional development for staff, monitoring the building budget, developing and implementing the school improvement plan, overseeing the high school testing program, and supervising the career and technical education department. What I love most about my position is being around our students and staff. With a large campus, it is often difficult to get to know individual students but I visit classrooms regularly and enjoy seeing them learning, collaborating, and building relationships with their teachers and one another. \n\nI began my career in education over 20 years ago as a high school math teacher in Houston, Texas. I also taught middle school and high school math in Hamtramck and at Troy Athens High School. I served as an assistant principal at Troy High School for eight years prior to coming to Grand Blanc. My educational experiences include a bachelor\’s degree from Michigan State University, a master\’s degree from Wayne State University and an education specialist degree and doctorate of philosophy degree from Oakland University.</item>
+        <item>An assistant principal since 1999 at GBHS, I have a broad background in public school administration as a school administrator for thirty-plus years, including most areas of K-12 education and community college, as well as a five-year private business experience as an educational consultant. I have had the opportunity to be a teacher, coach, assistant principal, principal, athletic director, community education director, technology director, and school consultant. I have earned a Bachelor Degree from Alma College and a Masters Degree from Central Michigan University.\n\nDuring my tenure at GBHS, I have demonstrated the ability to be an effective educational leader in the areas of student achievement, strategic planning, school improvement, student attendance and behavior, staff development, and community/parent involvement. I build strong relationships with staff, students and parents. I am truly committed to the success of all students.</item>
+        <item>I am very excited to be one of the assistant principals at Grand Blanc High School! I have great ties to this district, as I was with Grand Blanc for eleven years as both a teacher and a student advisor before moving into administration. I am a Bobcat through and through, and I am honored to be continuing my leadership here.\n\nMy responsibilities include attendance contracts, discipline, staff development, and supervision of curriculum and instruction. I commit to making sure that the education the students at Grand Blanc High School receive is exactly what I would want for my own children. I view discipline in the same way and will work with each child to problem solve and learn how to make better choices in the future. I also firmly believe in the power of communication. If you have concerns, questions, or suggestions, please take the time to express them to me. I value your experiences and feedback, and I would love to know what you need from me.</item>
+        <item>I am excited to begin as Assistant Principal here at Grand Blanc High School. Last year I served as Dean of students at a small charter school in Detroit, prior to that I spent three years at Ypsilanti Community Schools. During my time at Ypsilanti I was assistant principal/Athletic director at the high school and Dean of students at the middle school. I have over 15 years of experience in administration including a discipline and athletic background. I have coached football the last 15 years also been a track coach. I attended the University of Minnesota on a football scholarship from 1993-1997. \n\nI received my bachelor’s degree in Kinesiology from Eastern Michigan. I acquired a master’s degree from Concordia Chicago University in athletic administration and Leadership. Earlier this year I completed my second master’s degree in Educational Leadership with a principal certification and currently working on my Education Specialist degree, both of these at Grand Valley State University. I am truly blessed and honored to be at such a successful district with so many people that are great at what they do for students. \n\nI am originally from Greensboro Alabama where I was born. I moved to Ypsilanti Michigan when I was 4 years old, attended Willow Run high school and played basketball, football, and ran track. In my spare time I enjoy training football players, playing basketball, going to the bookstore, listening to music, and attending comedy shows. I am truly here to be a resource for the students of Grand Blanc high school and also the people that I work with.</item>
+        <item>Hello students, parents, and community members. My name is Lori Jackson. I have been in education for over 17 years. I hold a Bachelor of Science from the University of Michigan-Flint with a major in biology and minor in general science with a teaching certification. In addition I have a masters in educational leadership from Marygrove College and have attended the Aspiring Principal’s Program through Oakland Schools. \n\nThroughout my career I have taught high school science in Goodrich, Grand Blanc, Mt. Morris and Troy Athens. During my years at each school I enjoyed serving on various committees as well as helping to develop new programs to help students acclimate and succeed in high school. \n\nOutside of school I enjoy spending time with my husband and three children. We enjoy attending sporting events, traveling and spending time with our extended family. \n\nAs a member of the Grand Blanc community, I am committed to making a positive impact on our students’ academic and community achievements. </item>
+    </string-array>
+
+</resources>

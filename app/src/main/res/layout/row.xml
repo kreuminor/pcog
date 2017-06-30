@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="40sp"
-            android:layout_height="40sp"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
             android:layout_gravity="center"
             android:layout_marginLeft="5sp"
             android:layout_marginRight="5sp"
@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:text="Subject"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/pDate"
@@ -63,7 +63,7 @@
                 android:text="Date"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/colorAccent"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="italic" />
 
         </LinearLayout>

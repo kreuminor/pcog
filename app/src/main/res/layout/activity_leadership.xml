@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="org.jamaica.pcog.mobile.LeadershipActivity">
+    tools:context="org.jamaica.pcog.mobile.leader.LeadershipActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,8 +15,8 @@
 
         <ImageButton
             android:id="@+id/backbtn"
-            android:layout_width="25sp"
-            android:layout_height="25sp"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
             android:layout_gravity="center"
             android:layout_marginLeft="15sp"
             android:layout_marginRight="15sp"
@@ -24,36 +24,28 @@
             android:scaleType="fitXY"
             android:src="@drawable/arrow2" />
 
-        <TextView
-            android:id="@+id/toolbar_title"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:background="@color/colorPrimary"
-            android:gravity="left|center"
-            android:paddingLeft="20dp"
-            android:text="Leadership"
-            android:textColor="@android:color/background_light"
-            android:textSize="18sp"
-            android:visibility="visible"
-            tools:text="Leadership" />
-
         <include
-            layout="@layout/app_bar_main"
-            android:layout_width="1dp"
-            android:layout_height="wrap_content"
-            android:visibility="gone"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:elevation="1dp"
-        android:orientation="vertical">
-
-        <WebView
-            android:id="@+id/web"
+            layout="@layout/app_bar_main1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible" />
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/prog"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lst_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
 </LinearLayout>

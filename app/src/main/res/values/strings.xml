@@ -113,10 +113,13 @@
     <string name="vision">Our Vision</string>
     <string name="vision_text">A model evangelical church reaching and redeeming the nations......</string>
 
-    <string name="local">Our Location</string>
+    <string name="local">Contact Us</string>
     <string name="location_text">PCOG is located at 58a Barbara Avenue, Edgewater, Jamaica</string>
 
     <string name="search">Search</string>
     <string name="nothing_playing">Nothing is Playing</string>
+
+
+    <string name="Admin">Leadership</string>
 
 </resources>

@@ -90,7 +90,7 @@
             android:name="io.fabric.ApiKey"
             android:value="3e16a361e81cc9b0f6e12573e5de13a7cce8a17e" />
 
-        <activity android:name=".LeadershipActivity"
+        <activity android:name=".leader.LeadershipActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".bible.activities.SearchActivity"
             android:screenOrientation="portrait"/>
@@ -104,9 +104,6 @@
         <provider
             android:name=".bible.providers.BibleProvider"
             android:authorities="com.josephblough.bible.bibleprovider" />
-
-        <activity android:name=".podcast.StreamingMp3Player"
-            android:screenOrientation="portrait"/>
 
         <activity android:name=".podcast.PodcastActivity"
             android:screenOrientation="portrait"/>

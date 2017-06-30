@@ -88,7 +88,7 @@ public class InboxActivity extends ActionBarActivity {
                 Email.putExtra(Intent.EXTRA_SUBJECT,
                         "Add your Subject"); // Email 's Subject
                 Email.putExtra(Intent.EXTRA_TEXT, "Dear PCOG PR," + "");  //Email 's Greeting text
-                startActivity(Intent.createChooser(Email, "Send Announcement Request:"));
+                startActivity(Intent.createChooser(Email, "Send Request:"));
             }
         });
 

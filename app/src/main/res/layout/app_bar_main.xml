@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFCC00"
-            app:tabSelectedTextColor="@color/colorPrimaryDark"
+            app:tabSelectedTextColor="@color/seekbar_progress"
             app:tabTextColor="@color/colorPrimary" />
 
     </android.support.design.widget.AppBarLayout>

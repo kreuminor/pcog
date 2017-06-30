@@ -52,6 +52,7 @@ public class Sermon1 extends Activity implements OnClickListener,
 		setContentView(R.layout.activity_main2);
 		initialize_Controls();
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+		toolbar.setTitle("Sermon : God's Word");
 
 		// add back arrow to toolbar
 		img = (ImageButton) findViewById(R.id.backbtn);
@@ -66,6 +67,7 @@ public class Sermon1 extends Activity implements OnClickListener,
 				finish();
 			}
 		});
+
 	}
 
 	private void initialize_Controls() {

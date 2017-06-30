@@ -69,7 +69,7 @@ public class ContactActivity extends AppCompatActivity {
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
@@ -218,7 +218,7 @@ public class ContactActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(ContactActivity.this, MainActivity.class);
+        Intent intent = new Intent(ContactActivity.this, AboutActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         this.finish();

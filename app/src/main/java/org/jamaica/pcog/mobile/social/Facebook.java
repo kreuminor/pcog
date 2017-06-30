@@ -13,6 +13,7 @@ import android.widget.ImageButton;
 
 import org.jamaica.pcog.mobile.MainActivity;
 import org.jamaica.pcog.mobile.R;
+import org.jamaica.pcog.mobile.SplashActivity;
 
 import im.delight.android.webview.AdvancedWebView;
 
@@ -107,7 +108,7 @@ public class Facebook extends AppCompatActivity implements AdvancedWebView.Liste
                     //SplashScreenActivity.class is your Launcher Activity
                     // In Case of Fragment instead of Activity Replace getApplicationContext()  with getActivity()
 
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), SplashActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     intent.putExtra("EXIT", true);
                     startActivity(intent);

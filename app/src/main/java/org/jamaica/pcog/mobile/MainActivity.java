@@ -24,6 +24,7 @@ import android.widget.TextView;
 import org.jamaica.pcog.mobile.about.AboutActivity;
 import org.jamaica.pcog.mobile.announcement.InboxActivity;
 import org.jamaica.pcog.mobile.bible.activities.Bible;
+import org.jamaica.pcog.mobile.leader.LeadershipActivity;
 import org.jamaica.pcog.mobile.mpage.EventsFragment;
 import org.jamaica.pcog.mobile.mpage.MoreFragment;
 import org.jamaica.pcog.mobile.mpage.Welcomefragment;
@@ -98,12 +99,6 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_inbox) {
             Intent intent = new Intent(MainActivity.this, InboxActivity.class);
-            startActivity(intent);
-            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-            finish();
-
-        } else if (id == R.id.nav_call) {
-            Intent intent = new Intent(MainActivity.this, ContactActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();

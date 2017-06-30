@@ -52,6 +52,7 @@ public class Sermon2 extends Activity implements OnClickListener,
 		setContentView(R.layout.activity_main2);
 		initialize_Controls();
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+		toolbar.setTitle("Sermon : For Every Blessings");
 
 		// add back arrow to toolbar
 		img = (ImageButton) findViewById(R.id.backbtn);
