@@ -36,7 +36,7 @@
             android:paddingRight="@dimen/desc_padding"
             android:text="@string/slide_1_desc"
             android:textAlignment="center"
-            android:textColor="?android:attr/colorFocusedHighlight"
+            android:textColor="@color/colorAccent"
             android:textSize="@dimen/slide_desc" />
 
     </LinearLayout>

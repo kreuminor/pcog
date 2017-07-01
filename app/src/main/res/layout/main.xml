@@ -43,7 +43,7 @@
               android:layout_marginRight="2sp"
               android:background="@color/colorPrimary"
               android:scaleType="fitXY"
-              android:src="@drawable/bookmark" />
+              android:src="@drawable/ic_action_bookmark" />
 
           <ImageButton
               android:id="@+id/rmark"
@@ -54,7 +54,7 @@
               android:layout_marginRight="2sp"
               android:background="@color/colorPrimary"
               android:scaleType="fitXY"
-              android:src="@drawable/rbookmark" />
+              android:src="@drawable/ic_action_rbookmark" />
 
           <ImageButton
               android:id="@+id/bsearch"
@@ -65,7 +65,7 @@
               android:layout_marginRight="15sp"
               android:background="@color/colorPrimary"
               android:scaleType="fitXY"
-              android:src="@drawable/search" />
+              android:src="@drawable/ic_action_search" />
 
           <include
               layout="@layout/app_bar_main"

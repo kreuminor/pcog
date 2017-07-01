@@ -12,15 +12,16 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="@dimen/img_width_height"
-            android:layout_height="@dimen/img_width_height"
+            android:layout_width="203dp"
+            android:layout_height="203dp"
             android:src="@drawable/bible" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
             android:text="@string/slide_2_title"
-            android:textColor="@android:color/white"
+            android:textColor="@color/background"
             android:textSize="@dimen/slide_title"
             android:textStyle="bold" />
 
@@ -32,7 +33,7 @@
             android:paddingRight="@dimen/desc_padding"
             android:text="@string/slide_2_desc"
             android:textAlignment="center"
-            android:textColor="@android:color/white"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="@dimen/slide_desc" />
 
     </LinearLayout>

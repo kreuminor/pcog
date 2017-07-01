@@ -4,7 +4,6 @@
     android:id="@+id/more"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_splash"
     android:orientation="vertical"
     tools:context="org.jamaica.pcog.mobile.MainActivity">
 
@@ -14,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3sp"
-        app:cardCornerRadius="3sp"
+        android:background="@color/bg_splash"
         app:cardElevation="6dp">
 
         <ImageView
@@ -31,7 +30,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@color/bg_splash"
         android:gravity="center"
         android:orientation="vertical"
         android:weightSum="1">
@@ -46,7 +44,6 @@
             android:layout_marginRight="5sp"
             android:layout_marginTop="5sp"
             android:layout_weight="9.60"
-            android:background="@color/bg_splash"
             android:gravity="center"
             android:horizontalSpacing="5sp"
             android:numColumns="2"

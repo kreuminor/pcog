@@ -30,20 +30,18 @@
     <string name="latestart">Weekly</string>
 
     <string name="divineservice">
-      Prayer:           7:30am
-    \nSunday School:    8:30am
-    \nDivine Services:  9:30am
+    PRAYER:           7:30am
+    \n\nSUNDAY SCHOOL:    8:30am
+    \n\nDIVINE SERVICES:  9:30am
 
-    \n\nA Lunch:    10:32 - 11:02 (class starts at 11:08)
-    \nB Lunch:    11:05 - 11:35 (class starts at 11:38)
-    \nC Lunch:    11:38 - 12:08
-    \n\n4th Hour:   10:38 - 12:08
-    \n5th Hour:   12:14 - 1:12 (58 minutes)
-    \n6th Hour:    1:18 - 2:16 (58 minutes)
+    \n\n SUNDAY EVENING SERVICES
+    \n 1st Sunday - Evangelistic Outreach:.......6:30pm
+    \n 2nd Sunday - Women and Men Fellowship:... 6:30om
+    \n 3rd Sunday - Family Focus:............... 6:30pm
     \n\n***There will be a tone at 8:16, 9:20, 10:29, 12:05 and 1:09 to release travelers to their next class. All non-traveling students must remain in class until the official end of the period.</string>
 
     <string name="sundayschool">
-    Prayer :       8:30am
+    PRAYER :       8:30am
     \n2nd Hour:    7:54 - 8:22 (28 minutes)
     \n3rd Hour:    8:28 - 9:01 (29 minutes)
     \n\nNo lunch is served on a half day.
@@ -53,17 +51,15 @@
     \n\n***There will be a tone at 7:45, 8:19, 8:58, 9:32 and 10:06 to release travelers to their next class. All non-traveling students must remain in class until the official end of the period.</string>
 
     <string name="weeklyservices">
-    1st Hour:    9:40 – 10:11 (31 minutes)
-    \n2nd Hour:    10:17 - 10:48 (31 minutes)
-    \n3rd Hour:    10:54 - 11:25 (31 minutes)
-    \n\nA Lunch:    11:25 - 11:55 (class starts at 12:01)
-    \nB Lunch:    11:58 - 12:28 (class starts at 12:31)
-    \nC Lunch:    12:31 - 1:01
-    \n\n4th Hour:   11:31 - 1:01 (60 minutes of class)
-    \n5th Hour:   1:07 - 1:38 (31 minutes)
-    \n6th Hour:    1:44 - 2:16 (32 minutes)
-    \n\n***Office Hours : Mondays, Wednesdays and Fridays
-        \n9:00 a.m to 1:00 p.m. </string>
+    TUESDAYS
+    \nBible Study abd Prayer Meeting:    6:30pm
+    \n\nWEDNESDAYS
+    \nPrayer and Fasting Meeting:    10:00am
+    \n\nFRIDAYS
+    \nYouth Fellowship:    6:30pm
+
+    \n\n*Office Hours : Mondays, Wednesdays and Fridays
+    \n9:00 a.m to 1:00 p.m. </string>
 
     // Intro
     <string name="next">NEXT</string>
@@ -71,16 +67,16 @@
     <string name="start">GOT IT</string>
 
     <string name="slide_1_title">Portmore Church of God</string>
-    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+    <string name="slide_1_desc">This app will keep you informed about upcoming events and programmes throuh Portmoore Church of God..</string>
 
     <string name="slide_2_title">Scripture Reading</string>
-    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+    <string name="slide_2_desc">All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness; 2 Timothy 3:16</string>
 
-    <string name="slide_3_title">Helpful</string>
-    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+    <string name="slide_3_title">Praying</string>
+    <string name="slide_3_desc">And pray in the Spirit on all occasions with all kinds of prayers and requests. With this in mind, be alert and always keep on praying for all the Lords people; Ephesians 6:18. </string>
 
     <string name="slide_4_title">Kindness</string>
-    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+    <string name="slide_4_desc">But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness; Galations 5:22.</string>
 
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>

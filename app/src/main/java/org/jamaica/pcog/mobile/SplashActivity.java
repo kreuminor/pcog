@@ -41,7 +41,7 @@ public class SplashActivity extends AwesomeSplash {
 
         //Logo
 
-        configSplash.setLogoSplash(R.drawable.alogo);
+        configSplash.setLogoSplash(R.drawable.logo);
         configSplash.setAnimLogoSplashDuration(2500);
         configSplash.setAnimLogoSplashTechnique(Techniques.BounceIn);
 

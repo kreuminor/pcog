@@ -43,7 +43,7 @@ class OfficeDialog {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
 
         @SuppressLint("InflateParams")
-        View content = LayoutInflater.from(context).inflate(R.layout.dialog_office, null);
+        View content = LayoutInflater.from(context).inflate(R.layout.dialog_leadership, null);
 
         ImageView img = (ImageView) content.findViewById(R.id.imgInfo);
         TextView txtName = (TextView) content.findViewById(R.id.txtName);
