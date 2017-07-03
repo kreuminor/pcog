@@ -22,7 +22,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="5sp"
             android:layout_marginRight="5sp"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/logo1" />
 
         <FrameLayout
             android:layout_width="wrap_content"

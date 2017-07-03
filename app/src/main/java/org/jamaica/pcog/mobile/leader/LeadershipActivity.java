@@ -15,6 +15,7 @@ import android.widget.ProgressBar;
 
 import org.jamaica.pcog.mobile.MainActivity;
 import org.jamaica.pcog.mobile.R;
+import org.jamaica.pcog.mobile.about.AboutActivity;
 
 
 public class LeadershipActivity extends AppCompatActivity {
@@ -35,7 +36,7 @@ public class LeadershipActivity extends AppCompatActivity {
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
@@ -59,7 +60,7 @@ public class LeadershipActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         this.finish();

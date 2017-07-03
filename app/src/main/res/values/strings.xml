@@ -67,7 +67,7 @@
     <string name="start">GOT IT</string>
 
     <string name="slide_1_title">Portmore Church of God</string>
-    <string name="slide_1_desc">This app will keep you informed about upcoming events and programmes throuh Portmoore Church of God..</string>
+    <string name="slide_1_desc">This app will keep you informed about upcoming events and programmes through Portmore Church of God..</string>
 
     <string name="slide_2_title">Scripture Reading</string>
     <string name="slide_2_desc">All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness; 2 Timothy 3:16</string>
@@ -109,8 +109,14 @@
     <string name="vision">Our Vision</string>
     <string name="vision_text">A model evangelical church reaching and redeeming the nations......</string>
 
-    <string name="local">Contact Us</string>
-    <string name="location_text">PCOG is located at 58a Barbara Avenue, Edgewater, Jamaica</string>
+    <string name="aff">Our Affiliates</string>
+    <string name="aff_text">PCOG is located at 58a Barbara Avenue, Edgewater, Jamaica</string>
+
+    <string name="history">Our History</string>
+    <string name="history_text">PCOG is located at 58a Barbara Avenue, Edgewater, Jamaica</string>
+
+    <string name="leadership">Our Leadership</string>
+    <string name="leadership_text">PCOG is located at 58a Barbara Avenue, Edgewater, Jamaica</string>
 
     <string name="search">Search</string>
     <string name="nothing_playing">Nothing is Playing</string>

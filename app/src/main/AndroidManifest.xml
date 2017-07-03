@@ -25,8 +25,8 @@
         <activity
             android:name=".WelcomeActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,29 +47,36 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".time.TimesActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ContactActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".announcement.DetailActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".announcement.InboxActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".time.TimesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".announcement.DetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".announcement.InboxActivity"
+            android:screenOrientation="portrait" />
         //Social
-        <activity android:name=".social.Facebook"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".social.Youtube"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".social.Twitter"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".social.Facebook"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".social.Youtube"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".social.Twitter"
+            android:screenOrientation="portrait" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -90,38 +97,51 @@
             android:name="io.fabric.ApiKey"
             android:value="3e16a361e81cc9b0f6e12573e5de13a7cce8a17e" />
 
-        <activity android:name=".leader.LeadershipActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".bible.activities.SearchActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".bible.activities.SearchResultsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".bible.activities.ChapterActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".bible.activities.Bible"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".leader.LeadershipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bible.activities.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bible.activities.SearchResultsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bible.activities.ChapterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bible.activities.Bible"
+            android:screenOrientation="portrait" />
 
         <provider
             android:name=".bible.providers.BibleProvider"
             android:authorities="com.josephblough.bible.bibleprovider" />
 
-        <activity android:name=".podcast.PodcastActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".podcast.Sermon1"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".podcast.Sermon2"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".podcast.Sermon3"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".resources.Resources"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".about.AboutActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".about.activity.VisionActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".about.activity.MissionActivity"
-            android:screenOrientation="portrait"/>
-
+        <activity
+            android:name=".podcast.PodcastActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".podcast.Sermon1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".podcast.Sermon2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".podcast.Sermon3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".resources.Affiliates"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about.activity.VisionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about.activity.MissionActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".about.activity.HistoryActivity"></activity>
     </application>
 
 </manifest>

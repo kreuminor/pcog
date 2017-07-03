@@ -25,6 +25,7 @@ import org.jamaica.pcog.mobile.about.AboutActivity;
 import org.jamaica.pcog.mobile.announcement.InboxActivity;
 import org.jamaica.pcog.mobile.bible.activities.Bible;
 import org.jamaica.pcog.mobile.leader.LeadershipActivity;
+import org.jamaica.pcog.mobile.more.MapsActivity;
 import org.jamaica.pcog.mobile.mpage.EventsFragment;
 import org.jamaica.pcog.mobile.mpage.MoreFragment;
 import org.jamaica.pcog.mobile.mpage.Welcomefragment;
@@ -103,8 +104,8 @@ public class MainActivity extends AppCompatActivity
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
 
-        } else if (id == R.id.nav_lead) {
-            Intent intent = new Intent(MainActivity.this, LeadershipActivity.class);
+        } else if (id == R.id.nav_contact) {
+            Intent intent = new Intent(MainActivity.this, MapsActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();

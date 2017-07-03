@@ -253,10 +253,8 @@ public class InboxActivity extends ActionBarActivity {
             }
 
 
-
             // Then later, when you want to display image
             final ViewHolder finalHolder = holder;
-
 
 
             holder.inboxTitle.setText(inboxModelList.get(position).getTitle());

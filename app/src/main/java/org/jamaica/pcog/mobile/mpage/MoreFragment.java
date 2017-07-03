@@ -4,10 +4,8 @@ package org.jamaica.pcog.mobile.mpage;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,14 +21,10 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-import org.jamaica.pcog.mobile.ContactActivity;
-import org.jamaica.pcog.mobile.more.MapsActivity;
 import org.jamaica.pcog.mobile.R;
 import org.jamaica.pcog.mobile.profile.ProfileModelHome;
-import org.jamaica.pcog.mobile.resources.Resources;
 import org.jamaica.pcog.mobile.social.Facebook;
 import org.jamaica.pcog.mobile.social.Twitter;
-import org.jamaica.pcog.mobile.social.TwitterFragment;
 import org.jamaica.pcog.mobile.social.Youtube;
 
 import java.io.BufferedReader;

@@ -106,7 +106,8 @@ public class SearchActivity extends Activity implements OnClickListener {
 	    public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
 		if (event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
 		    InputMethodManager in = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-		    in.hideSoftInputFromWindow(searchField.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+			in.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
+		    //in.hideSoftInputFromWindow(searchField.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
 		    return true;
 		}
 		return false;

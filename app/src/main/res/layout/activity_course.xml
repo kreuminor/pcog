@@ -67,9 +67,9 @@
                 android:layout_margin="@dimen/fab_margin"
                 android:layout_weight="1"
                 android:elevation="6dp"
-                android:src="@drawable/ic_action_email_dark"
+                android:src="@drawable/ic_action_email"
                 android:visibility="visible"
-                app:backgroundTint="@android:color/holo_orange_light"
+                app:backgroundTint="@color/colorPrimaryDark"
                 app:layout_anchorGravity="bottom|right|end"
                 app:pressedTranslationZ="12dp"
                 tools:targetApi="lollipop" />

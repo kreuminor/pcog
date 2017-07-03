@@ -65,9 +65,7 @@ public class DetailActivity extends ActionBarActivity {
             time.setText(InboxModel.getTime());
             date.setText(InboxModel.getDate());
 
-
             }
-
 
     }
 

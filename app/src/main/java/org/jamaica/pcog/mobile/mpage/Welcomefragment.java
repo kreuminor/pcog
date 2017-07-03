@@ -19,10 +19,11 @@ import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
 import org.jamaica.pcog.mobile.R;
+import org.jamaica.pcog.mobile.about.AboutActivity;
 import org.jamaica.pcog.mobile.announcement.InboxActivity;
 import org.jamaica.pcog.mobile.podcast.PodcastActivity;
 import org.jamaica.pcog.mobile.profile.ProfileModelHome;
-import org.jamaica.pcog.mobile.resources.Resources;
+import org.jamaica.pcog.mobile.resources.Affiliates;
 import org.jamaica.pcog.mobile.time.TimesActivity;
 
 import java.util.ArrayList;
@@ -61,7 +62,7 @@ public class Welcomefragment extends Fragment {
         profileModelArrayList.add(new ProfileModelHome("Announcements", "?", R.drawable.logo1));
         profileModelArrayList.add(new ProfileModelHome("Order of Service", "", R.drawable.logo1));
         profileModelArrayList.add(new ProfileModelHome("Podcast", "", R.drawable.logo1));
-        profileModelArrayList.add(new ProfileModelHome("Resources", "", R.drawable.logo1));
+        profileModelArrayList.add(new ProfileModelHome("About Us", "", R.drawable.logo1));
 
 
         lvProfilesm = (ListView) v.findViewById(R.id.lvProfilesm);
@@ -170,7 +171,7 @@ public class Welcomefragment extends Fragment {
             }
             else if (i == 3) {
 
-                Intent intent = new Intent(getActivity(), Resources.class);
+                Intent intent = new Intent(getActivity(), AboutActivity.class);
                 startActivity(intent);
                 getActivity().finish();
 

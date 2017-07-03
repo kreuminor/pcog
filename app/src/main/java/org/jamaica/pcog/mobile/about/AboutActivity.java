@@ -12,9 +12,12 @@ import android.widget.ListView;
 import org.jamaica.pcog.mobile.ContactActivity;
 import org.jamaica.pcog.mobile.MainActivity;
 import org.jamaica.pcog.mobile.R;
+import org.jamaica.pcog.mobile.about.activity.HistoryActivity;
 import org.jamaica.pcog.mobile.about.activity.MissionActivity;
 import org.jamaica.pcog.mobile.about.activity.VisionActivity;
+import org.jamaica.pcog.mobile.leader.LeadershipActivity;
 import org.jamaica.pcog.mobile.more.MapsActivity;
+import org.jamaica.pcog.mobile.resources.Affiliates;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,14 +63,20 @@ public class AboutActivity extends AppCompatActivity implements AdapterView.OnIt
 
     private void generateList() {
         mAboutItems.clear();
-        mAboutItems.add(new AboutItem(getString(R.string.vision),
-                getString(R.string.vision_text),
+        mAboutItems.add(new AboutItem(getString(R.string.aff),
+                getString(R.string.aff_text),
+                R.drawable.logo1));
+        mAboutItems.add(new AboutItem(getString(R.string.history),
+                getString(R.string.history_text),
+                R.drawable.logo1));
+        mAboutItems.add(new AboutItem(getString(R.string.leadership),
+                getString(R.string.leadership_text),
                 R.drawable.logo1));
         mAboutItems.add(new AboutItem(getString(R.string.mission),
                 getString(R.string.mission_text),
                 R.drawable.logo1));
-        mAboutItems.add(new AboutItem(getString(R.string.local),
-                getString(R.string.location_text),
+        mAboutItems.add(new AboutItem(getString(R.string.vision),
+                getString(R.string.vision_text),
                 R.drawable.logo1));
 
 
@@ -77,21 +86,30 @@ public class AboutActivity extends AppCompatActivity implements AdapterView.OnIt
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         switch (position) {
             case 0: //Launch Navigation to the conference site
-                Intent i = new Intent(getApplicationContext(),VisionActivity.class);
+                Intent i = new Intent(getApplicationContext(),Affiliates.class);
                 finish();
                 startActivity(i);
                 break;
             case 1: // Display the Open Source projects used for this application
-                Intent i1 = new Intent(getApplicationContext(),MissionActivity.class);
+                Intent i1 = new Intent(getApplicationContext(),HistoryActivity.class);
                 finish();
                 startActivity(i1);
                 break;
             case 2: // Display the Open Source projects used for this application
-                Intent i2 = new Intent(getApplicationContext(),MapsActivity.class);
+                Intent i2 = new Intent(getApplicationContext(),LeadershipActivity.class);
                 finish();
                 startActivity(i2);
                 break;
-
+            case 3: // Display the Open Source projects used for this application
+                Intent i3 = new Intent(getApplicationContext(),MissionActivity.class);
+                finish();
+                startActivity(i3);
+                break;
+            case 4: // Display the Open Source projects used for this application
+                Intent i4 = new Intent(getApplicationContext(),VisionActivity.class);
+                finish();
+                startActivity(i4);
+                break;
         }
     }
     @Override

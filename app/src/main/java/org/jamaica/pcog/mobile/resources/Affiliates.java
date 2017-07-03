@@ -15,11 +15,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-import org.jamaica.pcog.mobile.ContactActivity;
 import org.jamaica.pcog.mobile.MainActivity;
 import org.jamaica.pcog.mobile.R;
 import org.jamaica.pcog.mobile.about.AboutActivity;
@@ -27,7 +25,7 @@ import org.jamaica.pcog.mobile.profile.ProfileModelHome;
 
 import java.util.ArrayList;
 
-public class Resources extends AppCompatActivity {
+public class Affiliates extends AppCompatActivity {
 
     private ListView lvResources;
     private MyAppAdapter myAppAdapter;
@@ -38,7 +36,7 @@ public class Resources extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_resources);
+        setContentView(R.layout.activity_aff);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -62,14 +60,14 @@ public class Resources extends AppCompatActivity {
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
         });
 
-        getSupportActionBar().setTitle("Resources");
+        getSupportActionBar().setTitle("Affiliates");
     }
 
 
@@ -191,7 +189,7 @@ public class Resources extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         this.finish();
