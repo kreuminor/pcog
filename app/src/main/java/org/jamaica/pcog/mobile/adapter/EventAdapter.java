@@ -30,16 +30,21 @@ public class EventAdapter extends ArrayAdapter<JSONObject>{
         this.list=list;
     }
     public View getView(int position, View convertView, ViewGroup parent) {
+
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View itemView = inflater.inflate(vg, parent, false);
         TextView txtName=(TextView)itemView.findViewById(R.id.txtName);
         TextView txtDay=(TextView)itemView.findViewById(R.id.txtDay);
         TextView txtMonth=(TextView)itemView.findViewById(R.id.txtMonth);
+        TextView txtDesc=(TextView)itemView.findViewById(R.id.txtDescption);
+        TextView txtVenue=(TextView)itemView.findViewById(R.id.txtVenue);
 
         try {
             txtName.setText(list.get(position).getString("name"));
             txtDay.setText(list.get(position).getString("day"));
             txtMonth.setText(list.get(position).getString("month"));
+            txtDesc.setText(list.get(position).getString("description"));
+            txtVenue.setText(list.get(position).getString("venue"));
         } catch (JSONException e) {
             e.printStackTrace();
         }

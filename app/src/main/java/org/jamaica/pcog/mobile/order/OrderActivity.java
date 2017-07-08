@@ -1,4 +1,4 @@
-package org.jamaica.pcog.mobile.time;
+package org.jamaica.pcog.mobile.order;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +17,7 @@ import org.jamaica.pcog.mobile.MainActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TimesActivity extends AppCompatActivity {
+public class OrderActivity extends AppCompatActivity {
 
     Toolbar toolbar;
     ImageButton img;
@@ -58,9 +58,9 @@ public class TimesActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         Adapter adapter = new Adapter(getSupportFragmentManager());
-        adapter.addFragment(new TimesFull(), getString(org.jamaica.pcog.mobile.R.string.fullday));
-        adapter.addFragment(new TimesHalf(), getString(org.jamaica.pcog.mobile.R.string.halfday));
-        adapter.addFragment(new TimesLate(), getString(org.jamaica.pcog.mobile.R.string.latestart));
+        adapter.addFragment(new Divine(), getString(org.jamaica.pcog.mobile.R.string.fullday));
+        //adapter.addFragment(new TimesHalf(), getString(org.jamaica.pcog.mobile.R.string.halfday));
+        adapter.addFragment(new Weekly(), getString(org.jamaica.pcog.mobile.R.string.latestart));
         viewPager.setAdapter(adapter);
     }
 

@@ -24,13 +24,12 @@ import android.widget.TextView;
 import org.jamaica.pcog.mobile.about.AboutActivity;
 import org.jamaica.pcog.mobile.announcement.InboxActivity;
 import org.jamaica.pcog.mobile.bible.activities.Bible;
-import org.jamaica.pcog.mobile.leader.LeadershipActivity;
 import org.jamaica.pcog.mobile.more.MapsActivity;
 import org.jamaica.pcog.mobile.mpage.EventsFragment;
 import org.jamaica.pcog.mobile.mpage.MoreFragment;
 import org.jamaica.pcog.mobile.mpage.Welcomefragment;
 import org.jamaica.pcog.mobile.podcast.PodcastActivity;
-import org.jamaica.pcog.mobile.time.TimesActivity;
+import org.jamaica.pcog.mobile.order.OrderActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -63,7 +62,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
+        getSupportActionBar().setTitle("Portmore Church of God");
     }
 
 
@@ -83,7 +82,7 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.Times) {
-            Intent intent = new Intent(getApplicationContext(), TimesActivity.class);
+            Intent intent = new Intent(getApplicationContext(), OrderActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             item.setChecked(true);

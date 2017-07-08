@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Portmore Church of God</string>
-    <string name="name1">Portmore Church of God</string>
+    <string name="app_name">PCOG</string>
+    <string name="name1">PCOG</string>
     <string name="location">Portmore</string>
     <string name="name">PCOG</string>
 
@@ -110,10 +110,10 @@
     <string name="vision_text">A model evangelical church reaching and redeeming the nations......</string>
 
     <string name="aff">Our Affiliates</string>
-    <string name="aff_text">PCOG is located at 58a Barbara Avenue, Edgewater, Jamaica</string>
+    <string name="aff_text">Portmore Church of God affiliates</string>
 
     <string name="history">Our History</string>
-    <string name="history_text">PCOG affiliates</string>
+    <string name="history_text">July 30, 1907 is a most important date for the Church of God in Jamaica. On that day a young man of twenty-four, his wife and twenty....</string>
 
     <string name="leadership">Our Leadership</string>
     <string name="leadership_text">PCOG is located at 58a Barbara Avenue, Edgewater, Jamaica</string>

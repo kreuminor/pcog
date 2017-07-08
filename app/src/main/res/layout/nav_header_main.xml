@@ -10,7 +10,7 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="90sp"
+        android:layout_width="100sp"
         android:layout_height="100sp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
@@ -26,7 +26,7 @@
         android:fontFamily="sans-serif"
         android:text="SALVATION"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/vpi__background_holo_light"
+        android:textColor="@android:color/holo_orange_light"
         android:textSize="13sp"
         android:textStyle="bold" />
 
@@ -37,7 +37,7 @@
         android:layout_alignBottom="@+id/textView4"
         android:layout_toStartOf="@+id/textView4"
         android:text="."
-        android:textColor="@android:color/holo_orange_light"
+        android:textColor="@color/cardview_light_background"
         android:textSize="30sp" />
 
     <TextView
@@ -48,7 +48,7 @@
         android:layout_alignBottom="@+id/textView"
         android:layout_centerHorizontal="true"
         android:text="UNITY"
-        android:textColor="@color/bg_splash"
+        android:textColor="@android:color/holo_orange_light"
         android:textSize="13sp"
         android:textStyle="bold" />
 
@@ -59,7 +59,7 @@
         android:layout_alignBottom="@+id/textView4"
         android:layout_toEndOf="@+id/textView4"
         android:text="."
-        android:textColor="@android:color/holo_orange_light"
+        android:textColor="@color/cardview_light_background"
         android:textSize="30sp" />
 
     <TextView
@@ -69,7 +69,7 @@
         android:layout_alignBottom="@+id/textView"
         android:layout_toEndOf="@+id/textView7"
         android:text="HOLINESS"
-        android:textColor="@color/bg_splash"
+        android:textColor="@android:color/holo_orange_light"
         android:textSize="13sp"
         android:textStyle="bold" />
 

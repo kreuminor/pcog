@@ -17,13 +17,13 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
 import org.jamaica.pcog.mobile.R;
 import org.jamaica.pcog.mobile.profile.ProfileModelHome;
 import org.jamaica.pcog.mobile.social.Facebook;
+import org.jamaica.pcog.mobile.social.Instagram;
 import org.jamaica.pcog.mobile.social.Twitter;
 import org.jamaica.pcog.mobile.social.Youtube;
 
@@ -179,7 +179,9 @@ public class MoreFragment extends Fragment {
 
             else if (i == 3) {
 
-                Toast.makeText(getContext(), "Instagram", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), Instagram.class);
+                startActivity(intent);
+                getActivity().finish();
             }
 
         }

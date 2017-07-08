@@ -1,4 +1,4 @@
-package org.jamaica.pcog.mobile.time;
+package org.jamaica.pcog.mobile.order;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,11 +7,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import org.jamaica.pcog.mobile.R;
 
-public class TimesLate extends Fragment {
+
+public class TimesHalf extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(org.jamaica.pcog.mobile.R.layout.times_late, container, false);
+        return inflater.inflate(R.layout.times_half, container, false);
     }
 }

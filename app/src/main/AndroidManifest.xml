@@ -56,7 +56,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".time.TimesActivity"
+            android:name=".order.OrderActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ContactActivity"
@@ -141,7 +141,8 @@
         <activity
             android:name=".about.activity.MissionActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".about.activity.HistoryActivity"></activity>
+        <activity android:name=".about.activity.HistoryActivity" />
+        <activity android:name=".social.Instagram"></activity>
     </application>
 
 </manifest>

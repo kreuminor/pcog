@@ -51,7 +51,7 @@ public class EventsFragment extends Fragment {
         EventAdapter adapter=new EventAdapter(getContext(),R.layout.list_layout,listItems);
         listV.setAdapter(adapter);
 
-        listV.setOnItemClickListener(new Itemlist());
+        //listV.setOnItemClickListener(new Itemlist());
 
 
         return v;
@@ -84,7 +84,7 @@ public class EventsFragment extends Fragment {
         }catch (JSONException je){je.printStackTrace();}
         return aList;
     }
-
+/*
     private class Itemlist implements AdapterView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -92,4 +92,5 @@ public class EventsFragment extends Fragment {
             Toast.makeText(getContext(), "Pop here!!", Toast.LENGTH_SHORT).show();
         }
     }
+    */
 }

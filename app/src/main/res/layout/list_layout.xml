@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="67dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -23,22 +23,22 @@
             <TextView
                 android:id="@+id/txtMonth"
                 android:layout_width="match_parent"
-                android:layout_height="25sp"
+                android:layout_height="32sp"
                 android:gravity="bottom|center"
                 android:text="AUG"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/colorPrimary"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/txtDay"
                 android:layout_width="match_parent"
-                android:layout_height="35sp"
+                android:layout_height="43sp"
                 android:gravity="top|center"
                 android:text="01"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 android:textColor="@color/colorAccent"
-                android:textSize="25sp" />
+                android:textSize="30sp" />
         </LinearLayout>
 
     </LinearLayout>
@@ -47,18 +47,80 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/txtName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="34sp"
+            android:gravity="center_vertical"
+            android:paddingBottom="3sp"
             android:paddingLeft="10sp"
+            android:paddingTop="3sp"
             android:text="Large Text"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="16sp" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="19sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="17sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/venue_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10sp"
+                android:paddingRight="5sp"
+                android:text="Venue:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                tools:text="Venue:" />
+
+            <TextView
+                android:id="@+id/txtVenue"
+                android:layout_width="match_parent"
+                android:layout_height="16sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="TextView"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="17sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10sp"
+                android:paddingRight="6sp"
+                android:text="Time  :"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                tools:text="Time  :" />
+
+            <TextView
+                android:id="@+id/txtDescption"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="TextView"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>

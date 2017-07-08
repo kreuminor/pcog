@@ -1,4 +1,4 @@
-package org.jamaica.pcog.mobile.time;
+package org.jamaica.pcog.mobile.order;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 import org.jamaica.pcog.mobile.R;
 
 
-public class TimesHalf extends Fragment {
+public class Divine extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.times_half, container, false);
+        return inflater.inflate(R.layout.times_full, container, false);
     }
 }

@@ -23,8 +23,7 @@ import org.jamaica.pcog.mobile.about.AboutActivity;
 import org.jamaica.pcog.mobile.announcement.InboxActivity;
 import org.jamaica.pcog.mobile.podcast.PodcastActivity;
 import org.jamaica.pcog.mobile.profile.ProfileModelHome;
-import org.jamaica.pcog.mobile.resources.Affiliates;
-import org.jamaica.pcog.mobile.time.TimesActivity;
+import org.jamaica.pcog.mobile.order.OrderActivity;
 
 import java.util.ArrayList;
 
@@ -158,7 +157,7 @@ public class Welcomefragment extends Fragment {
 
             } else if (i == 1) {
 
-                Intent intent = new Intent(getActivity(), TimesActivity.class);
+                Intent intent = new Intent(getActivity(), OrderActivity.class);
                 startActivity(intent);
                 getActivity().finish();
 
