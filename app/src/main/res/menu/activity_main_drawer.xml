@@ -15,13 +15,9 @@
             android:icon="@drawable/media"
             android:title="Podcast" />
         <item
-            android:id="@+id/nav_contact"
-            android:icon="@drawable/contac"
-            android:title="Contact Us" />
-        <item
-            android:id="@+id/nav_about"
-            android:icon="@drawable/user"
-            android:title="About Us" />
+            android:id="@+id/nav_login"
+            android:icon="@drawable/key"
+            android:title="Member" />
 
     </group>
 </menu>

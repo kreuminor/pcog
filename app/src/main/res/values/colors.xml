@@ -55,5 +55,10 @@
     <color name="my_secondary_text">#727272</color>
     <color name="my_icons">#FFFFFF</color>
     <color name="my_divider">#B6B6B6</color>
+    <color name="colorNavText">#ffffff</color>
+
+    <color name="colorIndivateTab">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorCardView">#f7f7f7</color>
 
 </resources>

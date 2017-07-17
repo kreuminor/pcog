@@ -78,6 +78,9 @@ public class AboutActivity extends AppCompatActivity implements AdapterView.OnIt
         mAboutItems.add(new AboutItem(getString(R.string.vision),
                 getString(R.string.vision_text),
                 R.drawable.logo1));
+        mAboutItems.add(new AboutItem(getString(R.string.contact),
+                getString(R.string.contact_text),
+                R.drawable.logo1));
 
 
     }
@@ -109,6 +112,11 @@ public class AboutActivity extends AppCompatActivity implements AdapterView.OnIt
                 Intent i4 = new Intent(getApplicationContext(),VisionActivity.class);
                 finish();
                 startActivity(i4);
+                break;
+            case 5: // Display the Open Source projects used for this application
+                Intent i5 = new Intent(getApplicationContext(),MapsActivity.class);
+                finish();
+                startActivity(i5);
                 break;
         }
     }

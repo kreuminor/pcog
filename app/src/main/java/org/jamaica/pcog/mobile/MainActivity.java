@@ -29,6 +29,8 @@ import com.nightonke.boommenu.BoomMenuButton;
 import org.jamaica.pcog.mobile.about.AboutActivity;
 import org.jamaica.pcog.mobile.announcement.InboxActivity;
 import org.jamaica.pcog.mobile.bible.activities.Bible;
+import org.jamaica.pcog.mobile.login.LoginActivity;
+import org.jamaica.pcog.mobile.login.ProfileActivity;
 import org.jamaica.pcog.mobile.more.MapsActivity;
 import org.jamaica.pcog.mobile.mpage.EventsFragment;
 import org.jamaica.pcog.mobile.mpage.MoreFragment;
@@ -70,7 +72,6 @@ public class MainActivity extends AppCompatActivity
 
         getSupportActionBar().setTitle("Portmore Church of God");
 
-
     }
 
 
@@ -111,12 +112,6 @@ public class MainActivity extends AppCompatActivity
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
 
-        } else if (id == R.id.nav_contact) {
-            Intent intent = new Intent(MainActivity.this, MapsActivity.class);
-            startActivity(intent);
-            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-            finish();
-
         }  else if (id == R.id.nav_podcast) {
             Intent intent = new Intent(MainActivity.this, PodcastActivity.class);
             startActivity(intent);
@@ -129,14 +124,13 @@ public class MainActivity extends AppCompatActivity
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
 
-        }else if (id == R.id.nav_about) {
-            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+        }else if (id == R.id.nav_login) {
+
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
-
         }
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

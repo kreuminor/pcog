@@ -142,7 +142,15 @@
             android:name=".about.activity.MissionActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".about.activity.HistoryActivity" />
-        <activity android:name=".social.Instagram"></activity>
+        <activity android:name=".social.Instagram" />
+        <activity android:name=".login.ProfileActivity" />
+        <activity android:name=".login.EditActivity" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".login.ResetPasswordActivity" />
+        <activity android:name=".login.SignupActivity" />
+        <activity android:name=".SplashGActivity" />
+        <activity android:name=".members.MainPage" />
+        <activity android:name=".members.chat.Chat"></activity>
     </application>
 
 </manifest>
