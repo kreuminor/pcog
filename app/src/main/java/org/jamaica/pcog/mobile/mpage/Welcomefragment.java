@@ -60,7 +60,6 @@ public class Welcomefragment extends Fragment {
         profileModelArrayList = new ArrayList<>();
         profileModelArrayList.add(new ProfileModelHome("Announcements", "?", R.drawable.logo1));
         profileModelArrayList.add(new ProfileModelHome("Order of Service", "", R.drawable.logo1));
-        profileModelArrayList.add(new ProfileModelHome("Podcast", "", R.drawable.logo1));
         profileModelArrayList.add(new ProfileModelHome("About Us", "", R.drawable.logo1));
 
 
@@ -161,14 +160,8 @@ public class Welcomefragment extends Fragment {
                 startActivity(intent);
                 getActivity().finish();
 
-            } else if (i == 2) {
-
-                Intent intent = new Intent(getActivity(), PodcastActivity.class);
-                startActivity(intent);
-                getActivity().finish();
-
             }
-            else if (i == 3) {
+            else if (i == 2) {
 
                 Intent intent = new Intent(getActivity(), AboutActivity.class);
                 startActivity(intent);

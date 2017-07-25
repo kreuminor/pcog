@@ -240,4 +240,22 @@
         completions."
     </string>
 
+    <string name="about">About</string>
+    <string name="login_success">login success</string>
+    <string name="login">Login</string>
+    <string name="Username">Email</string>
+    <string name="Password">Password</string>
+    <string name="forgot_your_password">Forgot your password ?</string>
+    <string name="go">Login</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="register">Register</string>
+
+    <string name="hint_username">Enter a new username</string>
+    <string name="hint_email_reset">Enter your email</string>
+    <string name="enter_group_name">Enter group name</string>
+
+    <string name="text2">Welcome to the HEART Trust/NTA online application page. Please follow the instructions as you proceed.</string>
+    <string name="text9">If you have any questions or problems, please send an email to info@heart-nta.org for assistance.</string>
+
+
 </resources>

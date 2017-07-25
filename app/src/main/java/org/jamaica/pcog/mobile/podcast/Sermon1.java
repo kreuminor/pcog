@@ -20,6 +20,7 @@ import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import org.jamaica.pcog.mobile.MainActivity;
 import org.jamaica.pcog.mobile.R;
 
 public class Sermon1 extends Activity implements OnClickListener,
@@ -61,7 +62,7 @@ public class Sermon1 extends Activity implements OnClickListener,
 			@Override
 			public void onClick(View v) {
 				pauseAudio();
-				Intent intent = new Intent(getApplicationContext(), PodcastActivity.class);
+				Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 				startActivity(intent);
 				overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 				finish();
@@ -254,7 +255,7 @@ public class Sermon1 extends Activity implements OnClickListener,
 
 		pauseAudio();
 
-		Intent intent = new Intent(getApplicationContext(), PodcastActivity.class);
+		Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 		startActivity(intent);
 		overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 		this.finish();

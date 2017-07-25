@@ -143,14 +143,17 @@
             android:screenOrientation="portrait" />
         <activity android:name=".about.activity.HistoryActivity" />
         <activity android:name=".social.Instagram" />
-        <activity android:name=".login.ProfileActivity" />
-        <activity android:name=".login.EditActivity" />
-        <activity android:name=".login.LoginActivity" />
-        <activity android:name=".login.ResetPasswordActivity" />
-        <activity android:name=".login.SignupActivity" />
         <activity android:name=".SplashGActivity" />
-        <activity android:name=".members.MainPage" />
-        <activity android:name=".members.chat.Chat"></activity>
+        <activity android:name=".members.chat.Rivchat"/>
+        <activity android:name=".members.chat.ui.LoginActivity"/>
+        <activity android:name=".members.chat.ui.RegisterActivity"/>
+        <activity android:name=".members.chat.PopApply"/>
+        <activity android:name=".login.LoginActivity"/>
+        <activity android:name=".login.ResetPasswordActivity"/>
+        <activity android:name=".login.ProfileActivity"/>
+        <activity android:name=".login.EditActivity"/>
+        <activity android:name=".members.MainPage"/>
+        <activity android:name=".members.chat.ui.ChatActivity"/>
     </application>
 
 </manifest>

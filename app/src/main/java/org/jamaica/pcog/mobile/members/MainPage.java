@@ -23,7 +23,9 @@ import com.bumptech.glide.Glide;
 import org.jamaica.pcog.mobile.MainActivity;
 import org.jamaica.pcog.mobile.R;
 import org.jamaica.pcog.mobile.login.EditActivity;
-import org.jamaica.pcog.mobile.members.chat.Chat;
+import org.jamaica.pcog.mobile.members.chat.Rivchat;
+import org.jamaica.pcog.mobile.members.chat.ui.LoginActivity;
+import org.jamaica.pcog.mobile.members.chat.ui.RegisterActivity;
 import org.jamaica.pcog.mobile.mpage.MoreFragment;
 import org.jamaica.pcog.mobile.profile.ProfileModelHome;
 import org.jamaica.pcog.mobile.social.Facebook;
@@ -48,7 +50,6 @@ public class MainPage extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().setTitle("Chat Room");
 
         // add back arrow to toolbar
         img = (ImageButton) findViewById(R.id.backbtn);
@@ -63,10 +64,10 @@ public class MainPage extends AppCompatActivity {
             }
         });
 
-        getSupportActionBar().setTitle("Members' Page");
+        getSupportActionBar().setTitle("PCOG Members' Page");
 
         profileModelArrayList = new ArrayList<>();
-        profileModelArrayList.add(new ProfileModelHome("CHAT", "", R.drawable.chat));
+        profileModelArrayList.add(new ProfileModelHome("CHAT", "", R.drawable.chat1));
         profileModelArrayList.add(new ProfileModelHome("BLANK", "", R.drawable.conn));
         profileModelArrayList.add(new ProfileModelHome("BLANK", "", R.drawable.conn));
         profileModelArrayList.add(new ProfileModelHome("BLANK", "", R.drawable.conn));
@@ -147,7 +148,7 @@ public class MainPage extends AppCompatActivity {
 
             if (i == 0) {
 
-                Intent intent = new Intent(getApplicationContext(), Chat.class);
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
                 finish();
 
@@ -161,6 +162,7 @@ public class MainPage extends AppCompatActivity {
 
         }
     }
+ /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -185,7 +187,7 @@ public class MainPage extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
+*/
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);

@@ -155,11 +155,6 @@ public class ProfileActivity extends AppCompatActivity implements NavigationView
             finish();
 
 
-        }  else if (id == R.id.nav_podcast) {
-            Intent intent = new Intent(getApplicationContext(), PodcastActivity.class);
-            startActivity(intent);
-            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-            finish();
 
         } else if (id == R.id.nav_bible) {
             Intent intent = new Intent(getApplicationContext(), Bible.class);

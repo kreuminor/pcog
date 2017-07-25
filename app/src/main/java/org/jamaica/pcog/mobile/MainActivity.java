@@ -1,5 +1,6 @@
 package org.jamaica.pcog.mobile;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -20,19 +21,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.nightonke.boommenu.BoomButtons.OnBMClickListener;
-import com.nightonke.boommenu.BoomButtons.TextInsideCircleButton;
-import com.nightonke.boommenu.BoomMenuButton;
 
 import org.jamaica.pcog.mobile.about.AboutActivity;
 import org.jamaica.pcog.mobile.announcement.InboxActivity;
 import org.jamaica.pcog.mobile.bible.activities.Bible;
-import org.jamaica.pcog.mobile.login.LoginActivity;
-import org.jamaica.pcog.mobile.login.ProfileActivity;
-import org.jamaica.pcog.mobile.more.MapsActivity;
+import org.jamaica.pcog.mobile.members.MainPage;
 import org.jamaica.pcog.mobile.mpage.EventsFragment;
+import org.jamaica.pcog.mobile.mpage.MediaFragment;
 import org.jamaica.pcog.mobile.mpage.MoreFragment;
 import org.jamaica.pcog.mobile.mpage.Welcomefragment;
 import org.jamaica.pcog.mobile.podcast.PodcastActivity;
@@ -112,12 +107,6 @@ public class MainActivity extends AppCompatActivity
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
 
-        }  else if (id == R.id.nav_podcast) {
-            Intent intent = new Intent(MainActivity.this, PodcastActivity.class);
-            startActivity(intent);
-            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-            finish();
-
         } else if (id == R.id.nav_bible) {
             Intent intent = new Intent(MainActivity.this, Bible.class);
             startActivity(intent);
@@ -126,11 +115,17 @@ public class MainActivity extends AppCompatActivity
 
         }else if (id == R.id.nav_login) {
 
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            Intent intent = new Intent(MainActivity.this, MainPage.class);
             startActivity(intent);
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
-        }
+        }else if (id == R.id.nav_about) {
+
+        Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        finish();
+    }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -191,8 +186,11 @@ public class MainActivity extends AppCompatActivity
                 EventsFragment tab2 = new EventsFragment();
                 return tab2;
             case 2:
-                MoreFragment tab3 = new MoreFragment();
+                MediaFragment tab3 = new MediaFragment();
                 return tab3;
+            case 3:
+                MoreFragment tab4 = new MoreFragment();
+                return tab4;
         }
 
             return PlaceholderFragment.newInstance(position + 1);
@@ -201,7 +199,7 @@ public class MainActivity extends AppCompatActivity
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 4;
         }
 
         @Override
@@ -212,6 +210,8 @@ public class MainActivity extends AppCompatActivity
                 case 1:
                     return "Events";
                 case 2:
+                    return "Media";
+                case 3:
                     return "More";
             }
             return null;
@@ -235,7 +235,7 @@ public class MainActivity extends AppCompatActivity
                 public void run() {
                     doubleBackPressed = false;
                 }
-            }, 2500);
+            }, 3000);
 
 
         }

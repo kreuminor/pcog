@@ -11,13 +11,13 @@
             android:icon="@drawable/bib"
             android:title="Bible" />
         <item
-            android:id="@+id/nav_podcast"
-            android:icon="@drawable/media"
-            android:title="Podcast" />
-        <item
             android:id="@+id/nav_login"
             android:icon="@drawable/key"
             android:title="Member" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/user"
+            android:title="About Us" />
 
     </group>
 </menu>
